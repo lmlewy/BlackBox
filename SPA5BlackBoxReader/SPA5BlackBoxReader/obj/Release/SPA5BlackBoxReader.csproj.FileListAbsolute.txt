@@ -1,0 +1,13 @@
+C:\Projekty\EWP\SPA5BlackBoxReader\SPA5BlackBoxReader_0_2\SPA5BlackBoxReader\SPA5BlackBoxReader\bin\Release\SPA5BlackBoxReader.exe.config
+C:\Projekty\EWP\SPA5BlackBoxReader\SPA5BlackBoxReader_0_2\SPA5BlackBoxReader\SPA5BlackBoxReader\bin\Release\SPA5BlackBoxReader.exe
+C:\Projekty\EWP\SPA5BlackBoxReader\SPA5BlackBoxReader_0_2\SPA5BlackBoxReader\SPA5BlackBoxReader\bin\Release\SPA5BlackBoxReader.pdb
+C:\Projekty\EWP\SPA5BlackBoxReader\SPA5BlackBoxReader_0_2\SPA5BlackBoxReader\SPA5BlackBoxReader\bin\Release\pl-PL\SPA5BlackBoxReader.resources.dll
+C:\Projekty\EWP\SPA5BlackBoxReader\SPA5BlackBoxReader_0_2\SPA5BlackBoxReader\SPA5BlackBoxReader\obj\Release\SPA5BlackBoxReader.Lang.resources
+C:\Projekty\EWP\SPA5BlackBoxReader\SPA5BlackBoxReader_0_2\SPA5BlackBoxReader\SPA5BlackBoxReader\obj\Release\SPA5BlackBoxReader.MainForm.resources
+C:\Projekty\EWP\SPA5BlackBoxReader\SPA5BlackBoxReader_0_2\SPA5BlackBoxReader\SPA5BlackBoxReader\obj\Release\SPA5BlackBoxReader.Properties.Resources.resources
+C:\Projekty\EWP\SPA5BlackBoxReader\SPA5BlackBoxReader_0_2\SPA5BlackBoxReader\SPA5BlackBoxReader\obj\Release\SPA5BlackBoxReader.Lang.pl-PL.resources
+C:\Projekty\EWP\SPA5BlackBoxReader\SPA5BlackBoxReader_0_2\SPA5BlackBoxReader\SPA5BlackBoxReader\obj\Release\SPA5BlackBoxReader.csproj.GenerateResource.Cache
+C:\Projekty\EWP\SPA5BlackBoxReader\SPA5BlackBoxReader_0_2\SPA5BlackBoxReader\SPA5BlackBoxReader\obj\Release\pl-PL\SPA5BlackBoxReader.resources.dll
+C:\Projekty\EWP\SPA5BlackBoxReader\SPA5BlackBoxReader_0_2\SPA5BlackBoxReader\SPA5BlackBoxReader\obj\Release\SPA5BlackBoxReader.exe
+C:\Projekty\EWP\SPA5BlackBoxReader\SPA5BlackBoxReader_0_2\SPA5BlackBoxReader\SPA5BlackBoxReader\obj\Release\SPA5BlackBoxReader.pdb
+C:\Projekty\EWP\SPA5BlackBoxReader\SPA5BlackBoxReader_0_2\SPA5BlackBoxReader\SPA5BlackBoxReader\obj\Release\SPA5BlackBoxReader.csprojResolveAssemblyReference.cache
