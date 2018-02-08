@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Resources;
@@ -17,6 +18,8 @@ namespace SPA5BlackBoxReader
     {
         CultureInfo ci = null;
         ResourceManager resmgr = new ResourceManager("SPA5BlackBoxReader.Lang", typeof(MainForm).Assembly);
+
+        private BackgroundWorker m_oBackgroundWorker = null;
 
         public MainForm()
         {
@@ -47,6 +50,7 @@ namespace SPA5BlackBoxReader
             this.labelFileToolStripMenuItem.Text = resmgr.GetString("labelFile", ci);
             this.labelReadToolStripMenuItem.Text = resmgr.GetString("labelRead", ci);
             this.labelChngLangToolStripMenuItem.Text = resmgr.GetString("labelChngLang", ci);
+            this.labelStopToolStripMenuItem.Text = resmgr.GetString("labelStop", ci);
             this.labelCloseToolStripMenuItem.Text = resmgr.GetString("labelClose", ci);
 
             this.labelInfoToolStripMenuItem.Text = resmgr.GetString("labelInfo", ci);
@@ -86,35 +90,33 @@ namespace SPA5BlackBoxReader
                 {
                     textBoxBin.Clear();
 
-                    String sConStr;
-                    sConStr = openFileDialog1.FileName;
+                    //String sConStr;
+                    //sConStr = openFileDialog1.FileName;
 
-                    var fs = new FileStream(@sConStr, FileMode.Open);
-                    var len = (int)fs.Length;
-                    var bits = new byte[len];
-                    fs.Read(bits, 0, len);
+                    //BinToHex bh = new BinToHex(); //za pomoca watkow
+                    //bh.readFile( openFileDialog1.FileName);
 
-                    for (int ix = 0; ix < len; ix += 16)
+
+                    if (null == m_oBackgroundWorker)
                     {
-                        var cnt = Math.Min(16, len - ix);
-                        var line = new byte[cnt];
-                        Array.Copy(bits, ix, line, 0, cnt);
-
-                        //Console.Write("{0:X6}  ", ix);
-                        textBoxBin.AppendText(ix.ToString());
-                        //Console.Write(BitConverter.ToString(line));
-                        textBoxBin.AppendText("  ");
-                        textBoxBin.AppendText(BitConverter.ToString(line));
-                        //Console.Write("  ");
-                        textBoxBin.AppendText("  ");
-
-                        for (int jx = 0; jx < cnt; ++jx)
-                            if (line[jx] < 0x20 || line[jx] > 0x7f) line[jx] = (byte)'.';
-                        //Console.WriteLine(Encoding.ASCII.GetString(line));
-                        textBoxBin.AppendText(Environment.NewLine);
+                        m_oBackgroundWorker = new BackgroundWorker();
+                        m_oBackgroundWorker.DoWork +=
+                            new DoWorkEventHandler(m_oBackgroundWorker_DoWork);
+                        m_oBackgroundWorker.RunWorkerCompleted +=
+                            new RunWorkerCompletedEventHandler(
+                            m_oBackgroundWorker_RunWorkerCompleted);
+                        m_oBackgroundWorker.ProgressChanged +=
+                            new ProgressChangedEventHandler(m_oBackgroundWorker_ProgressChanged);
+                        m_oBackgroundWorker.WorkerReportsProgress = true;
+                        m_oBackgroundWorker.WorkerSupportsCancellation = true;
                     }
+                    //pbProgress.Value = 0;
+                    //txtLog.Text = "Uruchomiono zadanie.\n";
+                    m_oBackgroundWorker.RunWorkerAsync();
 
-                    fs.Close();
+
+
+
                 }
                 else if (tabControl.SelectedTab == tabControl.TabPages["tabPageDecEvent"])
                 {
@@ -329,6 +331,16 @@ namespace SPA5BlackBoxReader
 
         }
 
+        private void labelStopToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if ((null != m_oBackgroundWorker) && m_oBackgroundWorker.IsBusy)
+            {
+                m_oBackgroundWorker.CancelAsync();
+            }
+
+        }
+
+
         private void labelCloseToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -336,12 +348,49 @@ namespace SPA5BlackBoxReader
 
 
 
+        private void AppendLog(string sText)
+        {
+            textBoxBin.AppendText("\r\n" + sText);
+            //textBoxBin.ScrollToEnd();
+            //textBoxBin.Text = textBoxBin.Text.Insert(0,"\r\n" + sText);//działa
+            //textBoxBin.AppendText("\n");
+        }
 
 
+        void m_oBackgroundWorker_DoWork(object sender, DoWorkEventArgs e)
+        {
+            for (int nCounter = 1; nCounter <= 100; ++nCounter)
+            {
+                if (m_oBackgroundWorker.CancellationPending)
+                {
+                    e.Cancel = true;
+                    break;
+                }
+                Thread.Sleep(1000);
+                m_oBackgroundWorker.ReportProgress(nCounter);
+            }
+        }
 
+        void m_oBackgroundWorker_ProgressChanged(object sender, ProgressChangedEventArgs e)
+        {
+            if (0 == (e.ProgressPercentage % 5))
+            {
+                AppendLog(e.ProgressPercentage.ToString() + "%\n");
+            }
+            toolStripProgressBar.Value = e.ProgressPercentage;
+        }
 
-
-
+        void m_oBackgroundWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            if (e.Cancelled)
+            {
+                AppendLog("Przerwano.");
+            }
+            else
+            {
+                AppendLog("Zakończono.");
+            }
+        }
 
 
 

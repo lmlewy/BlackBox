@@ -1,3 +1,8 @@
+https://stackoverflow.com/questions/519233/writing-to-a-textbox-from-another-thread
+http://www.altcontroldelete.pl/artykuly/implementacja-backgroundworker-w-wpf/
+http://www.altcontroldelete.pl/artykuly/wielowatkowosc-w-c-wprowadzenie/
+
+
 #region List Filtering
 //2
 static void Main(string[] args)

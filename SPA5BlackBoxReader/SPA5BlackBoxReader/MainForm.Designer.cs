@@ -30,12 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripProgressBar = new System.Windows.Forms.ToolStripProgressBar();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.labelFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.labelReadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.labelChngLangToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.polskiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.labelStopToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.labelCloseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.labelInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.labelAboutProgToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -43,8 +45,9 @@
             this.tabPageBin = new System.Windows.Forms.TabPage();
             this.textBoxBin = new System.Windows.Forms.TextBox();
             this.tabPageDecEvent = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.textBoxZdekodowane = new System.Windows.Forms.TextBox();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.tabControl.SuspendLayout();
             this.tabPageBin.SuspendLayout();
@@ -53,11 +56,19 @@
             // 
             // statusStrip1
             // 
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripProgressBar});
             this.statusStrip1.Location = new System.Drawing.Point(0, 443);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(846, 22);
             this.statusStrip1.TabIndex = 0;
             this.statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripProgressBar
+            // 
+            this.toolStripProgressBar.Margin = new System.Windows.Forms.Padding(12, 3, 1, 3);
+            this.toolStripProgressBar.Name = "toolStripProgressBar";
+            this.toolStripProgressBar.Size = new System.Drawing.Size(400, 16);
             // 
             // menuStrip1
             // 
@@ -75,6 +86,7 @@
             this.labelFileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.labelReadToolStripMenuItem,
             this.labelChngLangToolStripMenuItem,
+            this.labelStopToolStripMenuItem,
             this.labelCloseToolStripMenuItem});
             this.labelFileToolStripMenuItem.Name = "labelFileToolStripMenuItem";
             this.labelFileToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
@@ -111,6 +123,13 @@
             this.englishToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.englishToolStripMenuItem.Text = "English";
             this.englishToolStripMenuItem.Click += new System.EventHandler(this.englishToolStripMenuItem_Click);
+            // 
+            // labelStopToolStripMenuItem
+            // 
+            this.labelStopToolStripMenuItem.Name = "labelStopToolStripMenuItem";
+            this.labelStopToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.labelStopToolStripMenuItem.Text = "labelStop";
+            this.labelStopToolStripMenuItem.Click += new System.EventHandler(this.labelStopToolStripMenuItem_Click);
             // 
             // labelCloseToolStripMenuItem
             // 
@@ -177,16 +196,6 @@
             this.tabPageDecEvent.Text = "tabPageDecEvent";
             this.tabPageDecEvent.UseVisualStyleBackColor = true;
             // 
-            // tabPage3
-            // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(814, 387);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "tabPage3";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
             // textBoxZdekodowane
             // 
             this.textBoxZdekodowane.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -197,6 +206,16 @@
             this.textBoxZdekodowane.Name = "textBoxZdekodowane";
             this.textBoxZdekodowane.Size = new System.Drawing.Size(802, 375);
             this.textBoxZdekodowane.TabIndex = 0;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(814, 387);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "tabPage3";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
@@ -210,6 +229,8 @@
             this.Name = "MainForm";
             this.Text = "SPA-5 Black Box Reader";
             this.Load += new System.EventHandler(this.MainForm_Load);
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.tabControl.ResumeLayout(false);
@@ -240,6 +261,8 @@
         private System.Windows.Forms.ToolStripMenuItem englishToolStripMenuItem;
         private System.Windows.Forms.TextBox textBoxBin;
         private System.Windows.Forms.TextBox textBoxZdekodowane;
+        private System.Windows.Forms.ToolStripProgressBar toolStripProgressBar;
+        private System.Windows.Forms.ToolStripMenuItem labelStopToolStripMenuItem;
     }
 }
 

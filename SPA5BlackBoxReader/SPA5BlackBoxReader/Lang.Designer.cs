@@ -131,5 +131,14 @@ namespace SPA5BlackBoxReader {
                 return ResourceManager.GetString("labelRead", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Stop.
+        /// </summary>
+        internal static string labelStop {
+            get {
+                return ResourceManager.GetString("labelStop", resourceCulture);
+            }
+        }
     }
 }

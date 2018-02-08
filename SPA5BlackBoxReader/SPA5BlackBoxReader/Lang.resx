@@ -141,4 +141,7 @@
   <data name="labelRead" xml:space="preserve">
     <value>Open File</value>
   </data>
+  <data name="labelStop" xml:space="preserve">
+    <value>Stop</value>
+  </data>
 </root>
