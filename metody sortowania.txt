@@ -1,6 +1,8 @@
 https://stackoverflow.com/questions/519233/writing-to-a-textbox-from-another-thread
 http://www.altcontroldelete.pl/artykuly/implementacja-backgroundworker-w-wpf/
 http://www.altcontroldelete.pl/artykuly/wielowatkowosc-w-c-wprowadzenie/
+https://4programmers.net/Forum/C_i_.NET/142356-Komunikacja_miedzy_watkami
+http://patryknet.blogspot.com/2010/04/programowanie-wielowatkowe-w-net-cz-2.html
 
 
 #region List Filtering
