@@ -10,6 +10,18 @@ namespace SPA5BlackBoxReader
     {
         private List<DataFrame> FrameList = new List<DataFrame>();
 
+        public void ReadFile()
+        {
+
+
+
+
+
+
+
+        }
+
+
 
 
     }
