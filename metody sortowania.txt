@@ -4,6 +4,12 @@ http://www.altcontroldelete.pl/artykuly/wielowatkowosc-w-c-wprowadzenie/
 https://4programmers.net/Forum/C_i_.NET/142356-Komunikacja_miedzy_watkami
 http://patryknet.blogspot.com/2010/04/programowanie-wielowatkowe-w-net-cz-2.html
 
+https://docs.microsoft.com/en-us/dotnet/framework/winforms/controls/how-to-make-thread-safe-calls-to-windows-forms-controls
+https://msdn.microsoft.com/en-us/library/ms951089.aspx
+https://docs.microsoft.com/en-us/dotnet/standard/threading/managed-threading-best-practices
+http://www.csharpstar.com/background-worker-class-csharp/
+
+http://www.csharpstar.com/csharp-array/
 
 #region List Filtering
 //2

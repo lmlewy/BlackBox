@@ -44,7 +44,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BinToHex.cs" />
     <Compile Include="DataFrame.cs" />
     <Compile Include="Lang.Designer.cs">
       <AutoGen>True</AutoGen>

@@ -23,3 +23,4 @@ E:\praca\SPA5BlackBoxReader_0_2\SPA5BlackBoxReader\SPA5BlackBoxReader\bin\Debug\
 E:\praca\SPA5BlackBoxReader_0_2\SPA5BlackBoxReader\SPA5BlackBoxReader\bin\Debug\pl-PL\SPA5BlackBoxReader.resources.dll
 E:\praca\SPA5BlackBoxReader_0_2\SPA5BlackBoxReader\SPA5BlackBoxReader\obj\Debug\pl-PL\SPA5BlackBoxReader.resources.dll
 E:\praca\SPA5BlackBoxReader_0_2\SPA5BlackBoxReader\SPA5BlackBoxReader\obj\Debug\SPA5BlackBoxReader.csprojResolveAssemblyReference.cache
+C:\Projekty\EWP\SPA5BlackBoxReader\SPA5BlackBoxReader_0_2\SPA5BlackBoxReader\SPA5BlackBoxReader\obj\Debug\SPA5BlackBoxReader.csprojResolveAssemblyReference.cache
