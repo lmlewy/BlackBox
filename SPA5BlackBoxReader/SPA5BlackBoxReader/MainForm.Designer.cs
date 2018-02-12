@@ -60,7 +60,7 @@
             this.toolStripProgressBar});
             this.statusStrip1.Location = new System.Drawing.Point(0, 443);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(846, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(918, 22);
             this.statusStrip1.TabIndex = 0;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -77,7 +77,7 @@
             this.labelInfoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(846, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(918, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -154,13 +154,16 @@
             // 
             // tabControl
             // 
+            this.tabControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl.Controls.Add(this.tabPageBin);
             this.tabControl.Controls.Add(this.tabPageDecEvent);
             this.tabControl.Controls.Add(this.tabPage3);
             this.tabControl.Location = new System.Drawing.Point(12, 27);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(822, 413);
+            this.tabControl.Size = new System.Drawing.Size(903, 413);
             this.tabControl.TabIndex = 2;
             // 
             // tabPageBin
@@ -169,7 +172,7 @@
             this.tabPageBin.Location = new System.Drawing.Point(4, 22);
             this.tabPageBin.Name = "tabPageBin";
             this.tabPageBin.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageBin.Size = new System.Drawing.Size(814, 387);
+            this.tabPageBin.Size = new System.Drawing.Size(895, 387);
             this.tabPageBin.TabIndex = 0;
             this.tabPageBin.Text = "labelBin";
             this.tabPageBin.UseVisualStyleBackColor = true;
@@ -182,7 +185,7 @@
             this.textBoxBin.Location = new System.Drawing.Point(6, 6);
             this.textBoxBin.Multiline = true;
             this.textBoxBin.Name = "textBoxBin";
-            this.textBoxBin.Size = new System.Drawing.Size(802, 375);
+            this.textBoxBin.Size = new System.Drawing.Size(883, 375);
             this.textBoxBin.TabIndex = 0;
             // 
             // tabPageDecEvent
@@ -221,7 +224,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(846, 465);
+            this.ClientSize = new System.Drawing.Size(918, 465);
             this.Controls.Add(this.tabControl);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
