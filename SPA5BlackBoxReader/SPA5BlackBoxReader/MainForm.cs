@@ -22,6 +22,9 @@ namespace SPA5BlackBoxReader
         private BackgroundWorker binHexBackgroundWorker = null;
         private BackgroundWorker decodeMessagesBackgroundWorker = null;
 
+        //string[] mojaTab = new string[500000];    //to jest szybkie
+        List<string> itemsList = new List<string>();    //to jest szybkie
+
         String sConStr;
 
         public MainForm()
@@ -34,18 +37,7 @@ namespace SPA5BlackBoxReader
             ci = new CultureInfo("en-GB");
             updateLabels();
 
-            textBoxBin.Multiline = true;
-            textBoxBin.ScrollBars = ScrollBars.Vertical;
-            textBoxBin.AcceptsReturn = true;
-            textBoxBin.AcceptsTab = true;
-            textBoxBin.WordWrap = true;
-
-            textBoxBin.Multiline = true;
-            textBoxBin.ScrollBars = ScrollBars.Vertical;
-            textBoxBin.AcceptsReturn = true;
-            textBoxBin.AcceptsTab = true;
-            textBoxBin.WordWrap = true;
-
+            richTextBoxBin.Multiline = true;
         }
 
         private void updateLabels()
@@ -91,12 +83,12 @@ namespace SPA5BlackBoxReader
             {
                 if (tabControl.SelectedTab == tabControl.TabPages["tabPageBin"])
                 {
-                    textBoxBin.Clear();
+                    richTextBoxBin.Clear();
 
-                    //String sConStr;
                     sConStr = openFileDialog1.FileName;
+                    byte[] fileBytes = File.ReadAllBytes(@sConStr);
 
-                    ////To działa
+                    ////To działa - jest średnio szybkie
                     //if (null == binHexBackgroundWorker)
                     //{
                     //    binHexBackgroundWorker = new BackgroundWorker();
@@ -108,30 +100,59 @@ namespace SPA5BlackBoxReader
                     //}
                     //binHexBackgroundWorker.RunWorkerAsync();
 
-                    byte[] fileBytes = File.ReadAllBytes(@sConStr);
+
+                    //to jest szybkie ale wykorzystuje listę
                     string bufor = "";
                     int hexNumber = 0, lineNumber = 0;
+
+                    itemsList.Clear();
                     foreach (byte b in fileBytes)
                     {
-
                         if (hexNumber == 0) bufor += lineNumber.ToString() + ": ";
-                        //if (b < 10) bufor += " ";
-                        bufor += "\t";
-                        bufor += b.ToString("x").ToUpperInvariant() ;
-                        //bufor += " ";
+                        bufor += " ";
+                        if (b < 16) bufor += "0";
+                        bufor += b.ToString("x").ToUpperInvariant();
                         hexNumber++;
                         if (hexNumber > 16)
                         {
-                            bufor += Environment.NewLine;
+                            itemsList.Add(bufor);
+                            bufor = "";
                             hexNumber = 0;
                             lineNumber += 16;
                         }
                     }
 
-                    textBoxBin.Text = bufor;
- 
+                    string calosc = "";
+                    ////for (int i = itemsList.Count - 1; i >= 0; i--)
+                    for (int i = 0; i < itemsList.Count; i++)
+                    {
+                        calosc = calosc + itemsList[i] + '\n';
+                    }
+                    richTextBoxBin.Text = calosc;
+                    // koniec fragmentu z listą
 
 
+                    //wypisanie bez listy - bardzo wolne!!!
+                    //string bufor = "";
+                    //int hexNumber = 0, lineNumber = 0;
+
+                    //foreach (byte b in fileBytes)
+                    //{
+                    //    if (hexNumber == 0) bufor += lineNumber.ToString() + ": ";
+                    //    bufor += " ";
+                    //    if (b < 16) bufor += "0";
+                    //    bufor += b.ToString("x").ToUpperInvariant() ;
+                    //    hexNumber++;
+                    //    if (hexNumber > 16)
+                    //    {
+                            
+                    //        bufor += '\n';
+                    //        hexNumber = 0;
+                    //        lineNumber += 16;
+                    //    }
+                    //}
+                    //richTextBoxBin.Text = bufor;
+                    //koniec fragmentu wypisanie bez listy
 
 
                 }
@@ -194,9 +215,12 @@ namespace SPA5BlackBoxReader
             if ((null != binHexBackgroundWorker) && binHexBackgroundWorker.IsBusy)
             {
                 binHexBackgroundWorker.CancelAsync();
-                decodeMessagesBackgroundWorker.CancelAsync();
             }
 
+            if ((null != decodeMessagesBackgroundWorker) && decodeMessagesBackgroundWorker.IsBusy)
+            {
+                decodeMessagesBackgroundWorker.CancelAsync();
+            }
         }
 
 
@@ -209,61 +233,85 @@ namespace SPA5BlackBoxReader
 
         private void AppendTextBoxBinRew(string sText)
         {
-            textBoxBin.Text = textBoxBin.Text.Insert(0,"\r\n" + sText);//działa z BackgroundWorkerem
+            richTextBoxBin.Text = richTextBoxBin.Text.Insert(0,"\r\n" + sText);//działa z BackgroundWorkerem
         }
 
         private void AppendTextBoxBin(string sText)
         {
-            textBoxBin.Text = textBoxBin.Text + sText + "\n";
+            richTextBoxBin.Text = richTextBoxBin.Text + sText + "\n";
         }
 
 
         ////BackgroundWorker
         void binHexBackgroundWorker_DoWork(object sender, DoWorkEventArgs e)
         {
-            var fs = new FileStream(@sConStr, FileMode.Open);
-            var len = (int)fs.Length;
-            var bits = new byte[len];
-            fs.Read(bits, 0, len);
-            string textLine = "";
-            int progress = 0;
+            //var fs = new FileStream(@sConStr, FileMode.Open);
+            //var len = (int)fs.Length;
+            //var bits = new byte[len];
+            //fs.Read(bits, 0, len);
+            //string textLine = "";
+            //int progress = 0;
 
-            for (int ix = 0; ix < len; ix += 16)
+            //for (int ix = 0; ix < len; ix += 16)
+            //{
+            //    var cnt = Math.Min(16, len - ix);
+            //    var line = new byte[cnt];
+            //    Array.Copy(bits, ix, line, 0, cnt);
+
+            //    textLine += ix.ToString();
+            //    textLine += "   ";
+            //    textLine += BitConverter.ToString(line);
+            //    textLine += "   ";
+
+            //    ///for (int jx = 0; jx < cnt; ++jx)
+            //    //    if (line[jx] < 0x20 || line[jx] > 0x7f) line[jx] = (byte)'.';
+            //    //////Console.WriteLine(Encoding.ASCII.GetString(line));
+            //    //textBoxBin.AppendText(Environment.NewLine);
+            //    textLine += Environment.NewLine;
+
+
+
+            //    progress = Convert.ToInt32(((ix * 1.0)/len)*100.0);
+            //    Thread.Sleep(50);
+            //    binHexBackgroundWorker.ReportProgress(progress, textLine);
+            //    textLine = "";
+            //}
+
+            //fs.Close();
+
+            int numberOfElements = itemsList.Count();
+            int progress = 0, n = 0;
+
+            //foreach (string linia in itemsList)
+            for (int i = itemsList.Count - 1; i >= 0; i--)
             {
-                var cnt = Math.Min(16, len - ix);
-                var line = new byte[cnt];
-                Array.Copy(bits, ix, line, 0, cnt);
+                
+                //int arrayLenght = mojaTab.Length;
 
-                textLine += ix.ToString();
-                textLine += "   ";
-                textLine += BitConverter.ToString(line);
-                textLine += "   ";
+                    if (binHexBackgroundWorker.CancellationPending)
+                        {
+                            e.Cancel = true;
+                            break;
+                        }
 
-                ///for (int jx = 0; jx < cnt; ++jx)
-                //    if (line[jx] < 0x20 || line[jx] > 0x7f) line[jx] = (byte)'.';
-                //////Console.WriteLine(Encoding.ASCII.GetString(line));
-                //textBoxBin.AppendText(Environment.NewLine);
-                textLine += Environment.NewLine;
+                    Thread.Sleep(20);
+                    n++;
+                    progress = Convert.ToInt32(((n * 1.0) / numberOfElements) * 100.0);
+                    binHexBackgroundWorker.ReportProgress(progress, itemsList[i]);
+                    
 
-                if (binHexBackgroundWorker.CancellationPending)
-                    {
-                        e.Cancel = true;
-                        break;
-                    }
-
-                progress = Convert.ToInt32(((ix * 1.0)/len)*100.0);
-                Thread.Sleep(50);
-                binHexBackgroundWorker.ReportProgress(progress, textLine);
-                textLine = "";
             }
 
-            fs.Close();
+
+
+
+
 
         }
 
         void binHexBackgroundWorker_ProgressChanged(object sender, ProgressChangedEventArgs e)
         {
-            AppendTextBoxBin(e.UserState.ToString() + "\n");
+            AppendTextBoxBin(e.UserState.ToString());
             toolStripProgressBar.Value = e.ProgressPercentage;
         }
 

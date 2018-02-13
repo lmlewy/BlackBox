@@ -43,7 +43,7 @@
             this.labelAboutProgToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabPageBin = new System.Windows.Forms.TabPage();
-            this.textBoxBin = new System.Windows.Forms.TextBox();
+            this.richTextBoxBin = new System.Windows.Forms.RichTextBox();
             this.tabPageDecEvent = new System.Windows.Forms.TabPage();
             this.textBoxZdekodowane = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
@@ -168,7 +168,7 @@
             // 
             // tabPageBin
             // 
-            this.tabPageBin.Controls.Add(this.textBoxBin);
+            this.tabPageBin.Controls.Add(this.richTextBoxBin);
             this.tabPageBin.Location = new System.Drawing.Point(4, 22);
             this.tabPageBin.Name = "tabPageBin";
             this.tabPageBin.Padding = new System.Windows.Forms.Padding(3);
@@ -177,16 +177,16 @@
             this.tabPageBin.Text = "labelBin";
             this.tabPageBin.UseVisualStyleBackColor = true;
             // 
-            // textBoxBin
+            // richTextBoxBin
             // 
-            this.textBoxBin.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.richTextBoxBin.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxBin.Location = new System.Drawing.Point(6, 6);
-            this.textBoxBin.Multiline = true;
-            this.textBoxBin.Name = "textBoxBin";
-            this.textBoxBin.Size = new System.Drawing.Size(883, 375);
-            this.textBoxBin.TabIndex = 0;
+            this.richTextBoxBin.Location = new System.Drawing.Point(6, 6);
+            this.richTextBoxBin.Name = "richTextBoxBin";
+            this.richTextBoxBin.Size = new System.Drawing.Size(883, 234);
+            this.richTextBoxBin.TabIndex = 1;
+            this.richTextBoxBin.Text = "";
             // 
             // tabPageDecEvent
             // 
@@ -194,7 +194,7 @@
             this.tabPageDecEvent.Location = new System.Drawing.Point(4, 22);
             this.tabPageDecEvent.Name = "tabPageDecEvent";
             this.tabPageDecEvent.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageDecEvent.Size = new System.Drawing.Size(814, 387);
+            this.tabPageDecEvent.Size = new System.Drawing.Size(895, 387);
             this.tabPageDecEvent.TabIndex = 1;
             this.tabPageDecEvent.Text = "tabPageDecEvent";
             this.tabPageDecEvent.UseVisualStyleBackColor = true;
@@ -215,7 +215,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(814, 387);
+            this.tabPage3.Size = new System.Drawing.Size(895, 387);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -238,7 +238,6 @@
             this.menuStrip1.PerformLayout();
             this.tabControl.ResumeLayout(false);
             this.tabPageBin.ResumeLayout(false);
-            this.tabPageBin.PerformLayout();
             this.tabPageDecEvent.ResumeLayout(false);
             this.tabPageDecEvent.PerformLayout();
             this.ResumeLayout(false);
@@ -262,10 +261,10 @@
         private System.Windows.Forms.ToolStripMenuItem labelAboutProgToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem polskiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem englishToolStripMenuItem;
-        private System.Windows.Forms.TextBox textBoxBin;
         private System.Windows.Forms.TextBox textBoxZdekodowane;
         private System.Windows.Forms.ToolStripProgressBar toolStripProgressBar;
         private System.Windows.Forms.ToolStripMenuItem labelStopToolStripMenuItem;
+        private System.Windows.Forms.RichTextBox richTextBoxBin;
     }
 }
 
