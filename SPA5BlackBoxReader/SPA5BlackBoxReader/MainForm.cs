@@ -22,8 +22,10 @@ namespace SPA5BlackBoxReader
         private BackgroundWorker binHexBackgroundWorker = null;
         private BackgroundWorker decodeMessagesBackgroundWorker = null;
 
-        //string[] mojaTab = new string[500000];    //to jest szybkie
         List<string> itemsList = new List<string>();    //to jest szybkie
+
+        byte[] ramka = new byte[500];
+        List<byte[]> ramkaList = new List<byte[]>();
 
         String sConStr;
 
@@ -81,12 +83,51 @@ namespace SPA5BlackBoxReader
 
             if ((iResult != System.Windows.Forms.DialogResult.Cancel) && (openFileDialog1.FileName.Length != 0))
             {
+
+                sConStr = openFileDialog1.FileName;
+                byte[] fileBytes = File.ReadAllBytes(@sConStr);
+                int l;
+                if ( ( l = fileBytes.Length) > 5)
+                {
+                    //Parallel.For(3, fileBytes.Length, currentByte =>
+                    for (int currentByte = 0; currentByte < fileBytes.Length; currentByte++)
+                    {
+                        if ((fileBytes[currentByte] == 0xff) && (fileBytes[currentByte + 1] == 0xff) &&
+                            (fileBytes[currentByte + 2] == 0xff) && (fileBytes[currentByte + 3] == 0xff))
+                        {
+                            int frameLenght = (fileBytes[currentByte + 4] << 8) + fileBytes[currentByte + 5];
+                            //byte[] ramka = new byte[500];
+                            if ((fileBytes[currentByte + 8]) == 1)
+                            {
+                                for (int n = 0; n < frameLenght; n++)
+                                {
+                                    ramka[n] = fileBytes[currentByte + 4 + n];
+                                }
+                                ramkaList.Add(ramka);
+                            }
+                        }
+                    }
+                    //});
+
+                }
+                else
+                {
+
+                }
+
+                foreach (byte[] r in ramkaList)
+                {
+
+
+                }
+
+
+
+
+
                 if (tabControl.SelectedTab == tabControl.TabPages["tabPageBin"])
                 {
                     richTextBoxBin.Clear();
-
-                    sConStr = openFileDialog1.FileName;
-                    byte[] fileBytes = File.ReadAllBytes(@sConStr);
 
                     ////To działa - jest średnio szybkie
                     //if (null == binHexBackgroundWorker)
@@ -130,30 +171,6 @@ namespace SPA5BlackBoxReader
                     }
                     richTextBoxBin.Text = calosc;
                     // koniec fragmentu z listą
-
-
-                    //wypisanie bez listy - bardzo wolne!!!
-                    //string bufor = "";
-                    //int hexNumber = 0, lineNumber = 0;
-
-                    //foreach (byte b in fileBytes)
-                    //{
-                    //    if (hexNumber == 0) bufor += lineNumber.ToString() + ": ";
-                    //    bufor += " ";
-                    //    if (b < 16) bufor += "0";
-                    //    bufor += b.ToString("x").ToUpperInvariant() ;
-                    //    hexNumber++;
-                    //    if (hexNumber > 16)
-                    //    {
-                            
-                    //        bufor += '\n';
-                    //        hexNumber = 0;
-                    //        lineNumber += 16;
-                    //    }
-                    //}
-                    //richTextBoxBin.Text = bufor;
-                    //koniec fragmentu wypisanie bez listy
-
 
                 }
                 else if (tabControl.SelectedTab == tabControl.TabPages["tabPageDecEvent"])

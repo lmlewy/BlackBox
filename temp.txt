@@ -191,3 +191,67 @@
 
 
 }
+
+
+
+
+
+
+
+                    //wypisanie bez listy - bardzo wolne!!!
+                    //string bufor = "";
+                    //int hexNumber = 0, lineNumber = 0;
+
+                    //foreach (byte b in fileBytes)
+                    //{
+                    //    if (hexNumber == 0) bufor += lineNumber.ToString() + ": ";
+                    //    bufor += " ";
+                    //    if (b < 16) bufor += "0";
+                    //    bufor += b.ToString("x").ToUpperInvariant() ;
+                    //    hexNumber++;
+                    //    if (hexNumber > 16)
+                    //    {
+                            
+                    //        bufor += '\n';
+                    //        hexNumber = 0;
+                    //        lineNumber += 16;
+                    //    }
+                    //}
+                    //richTextBoxBin.Text = bufor;
+                    //koniec fragmentu wypisanie bez listy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
