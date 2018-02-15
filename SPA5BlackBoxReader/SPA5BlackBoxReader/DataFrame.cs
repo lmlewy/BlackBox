@@ -22,6 +22,32 @@ namespace SPA5BlackBoxReader
 
         }
 
+        public void DecodeDataFrame(byte[] frame)
+        {
+            switch (frame[0])
+            {
+                case 1:
+                    Console.WriteLine("jeden");
+                    break;
+
+                case 2:
+                    Console.WriteLine("dwa");
+                    break;
+
+                case 3:
+                    Console.WriteLine("trzy");
+                    break;
+
+                default:
+                    Console.WriteLine("Domyślna akcja - inny numer");
+                    break;
+            }
+
+
+
+        }
+
+ 
 
     }
 }

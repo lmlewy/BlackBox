@@ -9,10 +9,11 @@ namespace SPA5BlackBoxReader
     class ListOfFrames
     {
         private List<DataFrame> FrameList = new List<DataFrame>();
+        private List<String> DecodedFrameList = new List<String>();
 
-        public void ReadFile()
+        public void ReadFile( byte[] binFile)
         {
-
+            DecodedFrameList.Add("aaa");
 
 
 
@@ -21,7 +22,10 @@ namespace SPA5BlackBoxReader
 
         }
 
-
+        public List<String> Ramki()
+        {
+            return DecodedFrameList;
+        }
 
 
     }
