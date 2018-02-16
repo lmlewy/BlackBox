@@ -144,4 +144,40 @@
   <data name="labelStop" xml:space="preserve">
     <value>Stop</value>
   </data>
+  <data name="alertNotActive" xml:space="preserve">
+    <value>Alarm not active</value>
+  </data>
+  <data name="alertActive" xml:space="preserve">
+    <value>Alarm active</value>
+  </data>
+  <data name="alertCategoryNotRecognized" xml:space="preserve">
+    <value>Alert category not recognized</value>
+  </data>
+  <data name="eventNotActive" xml:space="preserve">
+    <value>Event not active</value>
+  </data>
+  <data name="eventActive" xml:space="preserve">
+    <value>AEvent active</value>
+  </data>
+  <data name="eventNotRecognized" xml:space="preserve">
+    <value>Event not recognized</value>
+  </data>
+  <data name="alertFirstCategory" xml:space="preserve">
+    <value>First category</value>
+  </data>
+  <data name="alertNotRecognized" xml:space="preserve">
+    <value>Alert not recognized</value>
+  </data>
+  <data name="alertSecondCategory" xml:space="preserve">
+    <value>Second category</value>
+  </data>
+  <data name="eventCategoryNotRecognized" xml:space="preserve">
+    <value>Event category not recognized</value>
+  </data>
+  <data name="eventFirstCategory" xml:space="preserve">
+    <value>First category</value>
+  </data>
+  <data name="eventSecondCategory" xml:space="preserve">
+    <value>Second category</value>
+  </data>
 </root>

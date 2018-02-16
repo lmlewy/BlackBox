@@ -19,15 +19,17 @@ namespace SPA5BlackBoxReader
         CultureInfo ci = null;
         ResourceManager resmgr = new ResourceManager("SPA5BlackBoxReader.Lang", typeof(MainForm).Assembly);
 
+        String sConStr;
+
         private BackgroundWorker binHexBackgroundWorker = null;
         private BackgroundWorker decodeMessagesBackgroundWorker = null;
 
         List<string> itemsList = new List<string>();    //to jest szybkie
+        List<string> decodedFramesList = new List<string>();
 
-        byte[] ramka = new byte[500];
-        List<byte[]> ramkaList = new List<byte[]>();
+        //byte[] ramka = new byte[500];
+        //List<byte[]> ramkaList = new List<byte[]>();
 
-        String sConStr;
 
         public MainForm()
         {
@@ -87,8 +89,8 @@ namespace SPA5BlackBoxReader
                 sConStr = openFileDialog1.FileName;
                 byte[] fileBytes = File.ReadAllBytes(@sConStr);
 
-
-
+                ListOfFrames decodedList = new ListOfFrames(ci);
+                decodedFramesList = decodedList.DecodeFile(fileBytes);
 
 
 
@@ -144,17 +146,26 @@ namespace SPA5BlackBoxReader
                 }
                 else if (tabControl.SelectedTab == tabControl.TabPages["tabPageDecEvent"])
                 {
-                    textBoxZdekodowane.Clear();
+                    richTextBoxZdekodowane.Clear();
 
-                    if (null == decodeMessagesBackgroundWorker)
+
+                    string calosc = "";
+                    ////for (int i = itemsList.Count - 1; i >= 0; i--)
+                    for (int i = 0; i < decodedFramesList.Count; i++)
                     {
+                        calosc = calosc + decodedFramesList[i] + '\n';
+                    }
+                    richTextBoxZdekodowane.Text = calosc;
+
+                    //if (null == decodeMessagesBackgroundWorker)
+                    //{
                         //decodeMessagesBackgroundWorker = new BackgroundWorker();
                         //decodeMessagesBackgroundWorker.DoWork += new DoWorkEventHandler(decodeMessagesBackgroundWorker_DoWork);
                         //decodeMessagesBackgroundWorker.RunWorkerCompleted += new RunWorkerCompletedEventHandler(decodeMessagesBackgroundWorker_RunWorkerCompleted);
                         //decodeMessagesBackgroundWorker.ProgressChanged += new ProgressChangedEventHandler(decodeMessagesBackgroundWorker_ProgressChanged);
                         //decodeMessagesBackgroundWorker.WorkerReportsProgress = true;
                         //decodeMessagesBackgroundWorker.WorkerSupportsCancellation = true;
-                    }
+                    //}
                     //decodeMessagesBackgroundWorker.RunWorkerAsync();               
 
 

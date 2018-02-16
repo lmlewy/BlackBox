@@ -45,8 +45,8 @@
             this.tabPageBin = new System.Windows.Forms.TabPage();
             this.richTextBoxBin = new System.Windows.Forms.RichTextBox();
             this.tabPageDecEvent = new System.Windows.Forms.TabPage();
-            this.textBoxZdekodowane = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.richTextBoxZdekodowane = new System.Windows.Forms.RichTextBox();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.tabControl.SuspendLayout();
@@ -190,7 +190,7 @@
             // 
             // tabPageDecEvent
             // 
-            this.tabPageDecEvent.Controls.Add(this.textBoxZdekodowane);
+            this.tabPageDecEvent.Controls.Add(this.richTextBoxZdekodowane);
             this.tabPageDecEvent.Location = new System.Drawing.Point(4, 22);
             this.tabPageDecEvent.Name = "tabPageDecEvent";
             this.tabPageDecEvent.Padding = new System.Windows.Forms.Padding(3);
@@ -198,17 +198,6 @@
             this.tabPageDecEvent.TabIndex = 1;
             this.tabPageDecEvent.Text = "tabPageDecEvent";
             this.tabPageDecEvent.UseVisualStyleBackColor = true;
-            // 
-            // textBoxZdekodowane
-            // 
-            this.textBoxZdekodowane.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxZdekodowane.Location = new System.Drawing.Point(6, 6);
-            this.textBoxZdekodowane.Multiline = true;
-            this.textBoxZdekodowane.Name = "textBoxZdekodowane";
-            this.textBoxZdekodowane.Size = new System.Drawing.Size(802, 375);
-            this.textBoxZdekodowane.TabIndex = 0;
             // 
             // tabPage3
             // 
@@ -219,6 +208,14 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // richTextBoxZdekodowane
+            // 
+            this.richTextBoxZdekodowane.Location = new System.Drawing.Point(6, 6);
+            this.richTextBoxZdekodowane.Name = "richTextBoxZdekodowane";
+            this.richTextBoxZdekodowane.Size = new System.Drawing.Size(845, 336);
+            this.richTextBoxZdekodowane.TabIndex = 0;
+            this.richTextBoxZdekodowane.Text = "";
             // 
             // MainForm
             // 
@@ -239,7 +236,6 @@
             this.tabControl.ResumeLayout(false);
             this.tabPageBin.ResumeLayout(false);
             this.tabPageDecEvent.ResumeLayout(false);
-            this.tabPageDecEvent.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -261,10 +257,10 @@
         private System.Windows.Forms.ToolStripMenuItem labelAboutProgToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem polskiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem englishToolStripMenuItem;
-        private System.Windows.Forms.TextBox textBoxZdekodowane;
         private System.Windows.Forms.ToolStripProgressBar toolStripProgressBar;
         private System.Windows.Forms.ToolStripMenuItem labelStopToolStripMenuItem;
         private System.Windows.Forms.RichTextBox richTextBoxBin;
+        private System.Windows.Forms.RichTextBox richTextBoxZdekodowane;
     }
 }
 

@@ -61,6 +61,114 @@ namespace SPA5BlackBoxReader {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Alarm active.
+        /// </summary>
+        internal static string alertActive {
+            get {
+                return ResourceManager.GetString("alertActive", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Alert category not recognized.
+        /// </summary>
+        internal static string alertCategoryNotRecognized {
+            get {
+                return ResourceManager.GetString("alertCategoryNotRecognized", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to First category.
+        /// </summary>
+        internal static string alertFirstCategory {
+            get {
+                return ResourceManager.GetString("alertFirstCategory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Alarm not active.
+        /// </summary>
+        internal static string alertNotActive {
+            get {
+                return ResourceManager.GetString("alertNotActive", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Alert not recognized.
+        /// </summary>
+        internal static string alertNotRecognized {
+            get {
+                return ResourceManager.GetString("alertNotRecognized", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Second category.
+        /// </summary>
+        internal static string alertSecondCategory {
+            get {
+                return ResourceManager.GetString("alertSecondCategory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AEvent active.
+        /// </summary>
+        internal static string eventActive {
+            get {
+                return ResourceManager.GetString("eventActive", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Event category not recognized.
+        /// </summary>
+        internal static string eventCategoryNotRecognized {
+            get {
+                return ResourceManager.GetString("eventCategoryNotRecognized", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to First category.
+        /// </summary>
+        internal static string eventFirstCategory {
+            get {
+                return ResourceManager.GetString("eventFirstCategory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Event not active.
+        /// </summary>
+        internal static string eventNotActive {
+            get {
+                return ResourceManager.GetString("eventNotActive", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Event not recognized.
+        /// </summary>
+        internal static string eventNotRecognized {
+            get {
+                return ResourceManager.GetString("eventNotRecognized", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Second category.
+        /// </summary>
+        internal static string eventSecondCategory {
+            get {
+                return ResourceManager.GetString("eventSecondCategory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Program info.
         /// </summary>
         internal static string labelAboutProg {
