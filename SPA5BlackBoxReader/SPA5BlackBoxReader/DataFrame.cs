@@ -48,14 +48,14 @@ namespace SPA5BlackBoxReader
             {
                 if (blkType == 1)
                 {
-                    int numberOfFrames = (blkLenght - 16) / 4;
+                    int numberOfFrames = (blkLenght - 20) / 8;
                     byte[] byteMessage = new byte[8];
 
                     for (int i = 0; i < numberOfFrames; i++)
                     {
                         for (int b = 0; b < 8; b++)
                         {
-                            byteMessage[b] = frame[16+i+b];
+                            byteMessage[b] = frame[16+(8*i)+b];
                         }
 
                         Message mess = new Message(cultureInfo);
@@ -94,14 +94,14 @@ namespace SPA5BlackBoxReader
             {
                 if (blkType == 1)
                 {
-                    int numberOfFrames = (blkLenght - 16) / 4;
+                    int numberOfFrames = (blkLenght - 20) / 8;
                     byte[] byteMessage = new byte[8];
 
                     for (int i = 0; i < numberOfFrames; i++)
                     {
                         for (int b = 0; b < 8; b++)
                         {
-                            byteMessage[b] = frame[16 + i + b];
+                            byteMessage[b] = frame[16 + (8*i) + b];
                         }
 
                         Message mess = new Message(cultureInfo);

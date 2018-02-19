@@ -73,13 +73,19 @@ namespace SPA5BlackBoxReader
                     string[][] table2 = new string[10][];
                     table2 = df.DecodeDataFrameToTable(b);
                     
-                    //foreach (string s in l)
-                    //{
-                    //}
+                    //// create array of arrays
+                    //object[][] tableOfObject = new object[10][];
+                    //// create arrays to put in the array of arrays
+                    //for (int i = 0; i < 10; i++) tableOfObject[i] = new object[10];
+
+                    //// get row as array
+                    //object[] rowOfObject = GetRow();
+                    //// put array in array of arrays
+                    //tableOfObjects[0] = rowOfObjects;
 
                     for (int j = 0; j < 4; j++)
                     {
-                        //table[numberOfFrames][j] = t[j];
+                        table[j][] = table2[j];
                     }
 
 
