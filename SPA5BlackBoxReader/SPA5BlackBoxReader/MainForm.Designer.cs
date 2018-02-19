@@ -45,13 +45,16 @@
             this.tabPageBin = new System.Windows.Forms.TabPage();
             this.richTextBoxBin = new System.Windows.Forms.RichTextBox();
             this.tabPageDecEvent = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.richTextBoxZdekodowane = new System.Windows.Forms.RichTextBox();
+            this.tabPageDecEventTable = new System.Windows.Forms.TabPage();
+            this.dataGridViewEventsAndAlarms = new System.Windows.Forms.DataGridView();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.tabControl.SuspendLayout();
             this.tabPageBin.SuspendLayout();
             this.tabPageDecEvent.SuspendLayout();
+            this.tabPageDecEventTable.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEventsAndAlarms)).BeginInit();
             this.SuspendLayout();
             // 
             // statusStrip1
@@ -159,7 +162,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl.Controls.Add(this.tabPageBin);
             this.tabControl.Controls.Add(this.tabPageDecEvent);
-            this.tabControl.Controls.Add(this.tabPage3);
+            this.tabControl.Controls.Add(this.tabPageDecEventTable);
             this.tabControl.Location = new System.Drawing.Point(12, 27);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
@@ -184,7 +187,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.richTextBoxBin.Location = new System.Drawing.Point(6, 6);
             this.richTextBoxBin.Name = "richTextBoxBin";
-            this.richTextBoxBin.Size = new System.Drawing.Size(883, 234);
+            this.richTextBoxBin.Size = new System.Drawing.Size(883, 316);
             this.richTextBoxBin.TabIndex = 1;
             this.richTextBoxBin.Text = "";
             // 
@@ -199,23 +202,35 @@
             this.tabPageDecEvent.Text = "tabPageDecEvent";
             this.tabPageDecEvent.UseVisualStyleBackColor = true;
             // 
-            // tabPage3
-            // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(895, 387);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "tabPage3";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
             // richTextBoxZdekodowane
             // 
             this.richTextBoxZdekodowane.Location = new System.Drawing.Point(6, 6);
             this.richTextBoxZdekodowane.Name = "richTextBoxZdekodowane";
-            this.richTextBoxZdekodowane.Size = new System.Drawing.Size(845, 336);
+            this.richTextBoxZdekodowane.Size = new System.Drawing.Size(845, 316);
             this.richTextBoxZdekodowane.TabIndex = 0;
             this.richTextBoxZdekodowane.Text = "";
+            // 
+            // tabPageDecEventTable
+            // 
+            this.tabPageDecEventTable.Controls.Add(this.dataGridViewEventsAndAlarms);
+            this.tabPageDecEventTable.Location = new System.Drawing.Point(4, 22);
+            this.tabPageDecEventTable.Name = "tabPageDecEventTable";
+            this.tabPageDecEventTable.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageDecEventTable.Size = new System.Drawing.Size(895, 387);
+            this.tabPageDecEventTable.TabIndex = 2;
+            this.tabPageDecEventTable.Text = "tabPageDecEventTable";
+            this.tabPageDecEventTable.UseVisualStyleBackColor = true;
+            // 
+            // dataGridViewEventsAndAlarms
+            // 
+            this.dataGridViewEventsAndAlarms.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridViewEventsAndAlarms.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewEventsAndAlarms.Location = new System.Drawing.Point(6, 6);
+            this.dataGridViewEventsAndAlarms.Name = "dataGridViewEventsAndAlarms";
+            this.dataGridViewEventsAndAlarms.Size = new System.Drawing.Size(883, 316);
+            this.dataGridViewEventsAndAlarms.TabIndex = 0;
             // 
             // MainForm
             // 
@@ -236,6 +251,8 @@
             this.tabControl.ResumeLayout(false);
             this.tabPageBin.ResumeLayout(false);
             this.tabPageDecEvent.ResumeLayout(false);
+            this.tabPageDecEventTable.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEventsAndAlarms)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -248,7 +265,7 @@
         private System.Windows.Forms.TabControl tabControl;
         private System.Windows.Forms.TabPage tabPageBin;
         private System.Windows.Forms.TabPage tabPageDecEvent;
-        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.TabPage tabPageDecEventTable;
         private System.Windows.Forms.ToolStripMenuItem labelFileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem labelReadToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem labelChngLangToolStripMenuItem;
@@ -261,6 +278,7 @@
         private System.Windows.Forms.ToolStripMenuItem labelStopToolStripMenuItem;
         private System.Windows.Forms.RichTextBox richTextBoxBin;
         private System.Windows.Forms.RichTextBox richTextBoxZdekodowane;
+        private System.Windows.Forms.DataGridView dataGridViewEventsAndAlarms;
     }
 }
 

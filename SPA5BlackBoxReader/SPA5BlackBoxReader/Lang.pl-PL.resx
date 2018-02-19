@@ -180,4 +180,7 @@
   <data name="eventSecondCategory" xml:space="preserve">
     <value>Druga kategoria</value>
   </data>
+  <data name="labelDecEventTable" xml:space="preserve">
+    <value>Alarmy i zdarzenia</value>
+  </data>
 </root>

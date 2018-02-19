@@ -214,6 +214,15 @@ namespace SPA5BlackBoxReader {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Decoded alarms and events.
+        /// </summary>
+        internal static string labelDecEventTable {
+            get {
+                return ResourceManager.GetString("labelDecEventTable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to File.
         /// </summary>
         internal static string labelFile {

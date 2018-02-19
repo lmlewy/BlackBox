@@ -57,7 +57,7 @@ namespace SPA5BlackBoxReader
 
             this.tabPageBin.Text = resmgr.GetString("labelBin", ci);
             this.tabPageDecEvent.Text = resmgr.GetString("labelDecEvent", ci);
-
+            this.tabPageDecEventTable.Text = resmgr.GetString("labelDecEventTable", ci);
         }
 
         private void polskiToolStripMenuItem_Click(object sender, EventArgs e)
@@ -88,12 +88,6 @@ namespace SPA5BlackBoxReader
 
                 sConStr = openFileDialog1.FileName;
                 byte[] fileBytes = File.ReadAllBytes(@sConStr);
-
-                ListOfFrames decodedList = new ListOfFrames(ci);
-                decodedFramesList = decodedList.DecodeFile(fileBytes);
-
-
-
 
 
                 if (tabControl.SelectedTab == tabControl.TabPages["tabPageBin"])
@@ -146,8 +140,10 @@ namespace SPA5BlackBoxReader
                 }
                 else if (tabControl.SelectedTab == tabControl.TabPages["tabPageDecEvent"])
                 {
-                    richTextBoxZdekodowane.Clear();
+                    ListOfFrames decodedList = new ListOfFrames(ci);
+                    decodedFramesList = decodedList.DecodeFileAsList(fileBytes);
 
+                    richTextBoxZdekodowane.Clear();
 
                     string calosc = "";
                     ////for (int i = itemsList.Count - 1; i >= 0; i--)
@@ -159,19 +155,48 @@ namespace SPA5BlackBoxReader
 
                     //if (null == decodeMessagesBackgroundWorker)
                     //{
-                        //decodeMessagesBackgroundWorker = new BackgroundWorker();
-                        //decodeMessagesBackgroundWorker.DoWork += new DoWorkEventHandler(decodeMessagesBackgroundWorker_DoWork);
-                        //decodeMessagesBackgroundWorker.RunWorkerCompleted += new RunWorkerCompletedEventHandler(decodeMessagesBackgroundWorker_RunWorkerCompleted);
-                        //decodeMessagesBackgroundWorker.ProgressChanged += new ProgressChangedEventHandler(decodeMessagesBackgroundWorker_ProgressChanged);
-                        //decodeMessagesBackgroundWorker.WorkerReportsProgress = true;
-                        //decodeMessagesBackgroundWorker.WorkerSupportsCancellation = true;
+                    //decodeMessagesBackgroundWorker = new BackgroundWorker();
+                    //decodeMessagesBackgroundWorker.DoWork += new DoWorkEventHandler(decodeMessagesBackgroundWorker_DoWork);
+                    //decodeMessagesBackgroundWorker.RunWorkerCompleted += new RunWorkerCompletedEventHandler(decodeMessagesBackgroundWorker_RunWorkerCompleted);
+                    //decodeMessagesBackgroundWorker.ProgressChanged += new ProgressChangedEventHandler(decodeMessagesBackgroundWorker_ProgressChanged);
+                    //decodeMessagesBackgroundWorker.WorkerReportsProgress = true;
+                    //decodeMessagesBackgroundWorker.WorkerSupportsCancellation = true;
                     //}
                     //decodeMessagesBackgroundWorker.RunWorkerAsync();               
+                }
+                else
+                {
+                    //ListOfFrames decodedList = new ListOfFrames(ci);
+                    //decodedFramesList = decodedList.DecodeFileAsList(fileBytes);
+
+                    //var source = new BindingSource();
+                    ////List<MyStruct> list = new List<MyStruct> { new MyStruct("fff", "b"), new MyStruct("c", "d") };
+                    //source.DataSource = decodedFramesList;
+                    //dataGridViewEventsAndAlarms.DataSource = decodedFramesList.Select(x => new { Value = x }).ToList();
+
+                    ListOfFrames decodedList = new ListOfFrames(ci);
+                    string[][] decodedFramesTable;
+                    decodedFramesTable = decodedList.DecodeFileAsTable(fileBytes);
+                    //var source = new BindingSource();
+                    //source.DataSource = decodedFramesTable;
+                    //dataGridViewEventsAndAlarms.DataSource = decodedFramesTable.Select(x => new { Value = x }).ToList();
 
 
+                    DataTable table = new DataTable();
+                    table.Columns.Add("Czas", typeof(string));
+                    table.Columns.Add("Kanał", typeof(string));
+                    table.Columns.Add("numer", typeof(string));
+                    table.Columns.Add("tekst", typeof(string));
+                    table.Columns.Add("aktywny", typeof(string));
 
+                    //for (int i = 0; i < decodedFramesTable.GetLength(0) ; i++)
+                    for (int i = 0; i < 1; i++)
+                        table.Rows.Add(decodedFramesTable[i][0], decodedFramesTable[i][1], decodedFramesTable[i][2], decodedFramesTable[i][3], decodedFramesTable[i][4]);
+
+                    dataGridViewEventsAndAlarms.DataSource = table;
 
                 }
+
 
             }
 

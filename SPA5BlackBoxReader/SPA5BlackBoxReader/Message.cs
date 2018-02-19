@@ -10,7 +10,7 @@ namespace SPA5BlackBoxReader
 {
     class Message
     {
-        private List<string> decodedMessage = new List<string>();
+        
         private int alertNumber;
         private string alertName;
         private string alertStatus;
@@ -32,11 +32,6 @@ namespace SPA5BlackBoxReader
             get { return alertStatus; }
         }
 
-        public List<string> DecodedMessage
-        {
-            get { return decodedMessage;  }
-        }
-
         ResourceManager resmgr = new ResourceManager("SPA5BlackBoxReader.Lang", typeof(Message).Assembly);
         CultureInfo internalCI = null;
 
@@ -50,21 +45,22 @@ namespace SPA5BlackBoxReader
         }
 
 
-        public void DecodeMessage(byte[] message)
+        public List<string> DecodeMessageToList(byte[] message)
         {
+            List<string> decodedMessage = new List<string>();
             decodedMessage.Clear();
             switch (message[0])
             {
                 case Constants.MESSTYPE_LOCATION:
-                    DecodeLocation(message);
+                    decodedMessage.Add(DecodeLocation(message));
                     break;
 
                 case Constants.MESSTYPE_ALERT:
-                    DecodeAlert(message);
+                    decodedMessage = DecodeAlert(message).ToList();
                     break;
 
                 case Constants.MESSTYPE_EVENT:
-                    DecodeEvent(message);
+                    decodedMessage = DecodeEvent(message).ToList();
                     break;
 
                 case Constants.MESSTYPE_ELS95:
@@ -72,7 +68,7 @@ namespace SPA5BlackBoxReader
                     break;
 
                 case Constants.MESSTYPE_MODE:
-                    DecodeMode(message);
+                    decodedMessage.Add(DecodeMode(message));
                     break;
 
                 case Constants.MESSTYPE_FILEDESC:
@@ -85,23 +81,68 @@ namespace SPA5BlackBoxReader
 
                 default:
 
+                    break;
+            }
+
+            return decodedMessage;
+        }
+
+        public string[] DecodeMessageToTable(byte[] message)
+        {
+            int i = 0;
+            string[] decodedMessage = new string[4];
+            switch (message[0])
+            {
+                case Constants.MESSTYPE_LOCATION:
+                    decodedMessage[0] = DecodeLocation(message);
+                    break;
+
+                case Constants.MESSTYPE_ALERT:
+                    foreach (string s in DecodeAlert(message))
+                        decodedMessage[i++] = s;
+                    break;
+
+                case Constants.MESSTYPE_EVENT:
+                    foreach (string s in DecodeEvent(message))
+                        decodedMessage[i++] = s;
+                    break;
+
+                case Constants.MESSTYPE_ELS95:
+
+                    break;
+
+                case Constants.MESSTYPE_MODE:
+                    decodedMessage[0] = DecodeMode(message);
+                    break;
+
+                case Constants.MESSTYPE_FILEDESC:
+
+                    break;
+
+                case Constants.MESSTYPE_EHE2:
+
+                    break;
+
+                default:
 
                     break;
             }
 
-
-
+            return decodedMessage;
         }
 
-        private void DecodeLocation(byte[] location)
-        {
-            decodedMessage.Add("System location");
 
+
+
+        private string DecodeLocation(byte[] location)
+        {
+
+            return "System location";
         }
 
-        private void DecodeAlert(byte[] alert)
+        private List<string> DecodeAlert(byte[] alert)
         {
-            //List<string> decodedAlarm = new List<string>();
+            List<string> decodedAlarm = new List<string>();
 
             alertNumber = (alert[1] << 8) + alert[2];
 
@@ -118,16 +159,18 @@ namespace SPA5BlackBoxReader
 
             alertGroup = alert[5].ToString();
 
-            decodedMessage.Add("Alert number " + alertNumber.ToString());
-            decodedMessage.Add(alertName);
-            decodedMessage.Add(alertStatus);
-            decodedMessage.Add(alertCategory);
+            decodedAlarm.Add("Alert number " + alertNumber.ToString());
+            decodedAlarm.Add(alertName);
+            decodedAlarm.Add(alertStatus);
+            decodedAlarm.Add(alertCategory);
 
-            //return decodedAlarm;
+            return decodedAlarm;
         }
 
-        private void DecodeEvent(byte[] decEvent)
+        private List<string> DecodeEvent(byte[] decEvent)
         {
+            List<string> decodedEvent = new List<string>();
+
             alertNumber = (decEvent[1] << 8) + decEvent[2];
 
             alertName = resmgr.GetString("event" + alertNumber.ToString(), internalCI);
@@ -143,35 +186,36 @@ namespace SPA5BlackBoxReader
 
             alertGroup = decEvent[5].ToString();
 
-            decodedMessage.Add("Event number " + alertNumber.ToString());
-            decodedMessage.Add(alertName);
-            decodedMessage.Add(alertStatus);
-            decodedMessage.Add(alertCategory);
+            decodedEvent.Add("Event number " + alertNumber.ToString());
+            decodedEvent.Add(alertName);
+            decodedEvent.Add(alertStatus);
+            decodedEvent.Add(alertCategory);
 
+            return decodedEvent;
         }
 
-        private void DecodeELS95(byte[] ELS95diag)
+        private string DecodeELS95(byte[] ELS95diag)
         {
-            decodedMessage.Add("ELS-95 diagnostics");
 
+            return "ELS-95 diagnostics";
         }
 
-        private void DecodeMode(byte[] SPA5mode)
+        private string DecodeMode(byte[] SPA5mode)
         {
-            decodedMessage.Add("System mode");
 
+            return "System mode";
         }
 
-        private void DecodeFileDesc()
+        private string DecodeFileDesc()
         {
-            decodedMessage.Add("File descryptor");
 
+            return "File descryptor";
         }
 
-        private void DecodeEHE2(byte[] EHE2diag)
+        private string DecodeEHE2(byte[] EHE2diag)
         {
-            decodedMessage.Add("EHE-2 diagnostics");
 
+            return "EHE-2 diagnostics";
         }
 
 
