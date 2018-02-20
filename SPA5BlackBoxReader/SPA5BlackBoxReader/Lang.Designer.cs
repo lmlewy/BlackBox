@@ -61,6 +61,51 @@ namespace SPA5BlackBoxReader {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to reserve.
+        /// </summary>
+        internal static string alert1 {
+            get {
+                return ResourceManager.GetString("alert1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to no battery charging of channel A.
+        /// </summary>
+        internal static string alert2 {
+            get {
+                return ResourceManager.GetString("alert2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to no battery charging of channel B.
+        /// </summary>
+        internal static string alert3 {
+            get {
+                return ResourceManager.GetString("alert3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to no battery charging of channel C.
+        /// </summary>
+        internal static string alert4 {
+            get {
+                return ResourceManager.GetString("alert4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to no battery charging of channel D.
+        /// </summary>
+        internal static string alert5 {
+            get {
+                return ResourceManager.GetString("alert5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Alarm active.
         /// </summary>
         internal static string alertActive {
@@ -115,7 +160,115 @@ namespace SPA5BlackBoxReader {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AEvent active.
+        ///   Looks up a localized string similar to System works in automatic mode.
+        /// </summary>
+        internal static string event10 {
+            get {
+                return ResourceManager.GetString("event10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Critical failure of the system.
+        /// </summary>
+        internal static string event11 {
+            get {
+                return ResourceManager.GetString("event11", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Minor failure of the system.
+        /// </summary>
+        internal static string event12 {
+            get {
+                return ResourceManager.GetString("event12", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to train detectors in track 1 are switched on.
+        /// </summary>
+        internal static string event16 {
+            get {
+                return ResourceManager.GetString("event16", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to train detectors in track 2 are switched on.
+        /// </summary>
+        internal static string event17 {
+            get {
+                return ResourceManager.GetString("event17", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to train detectors in track 3 are switched on.
+        /// </summary>
+        internal static string event18 {
+            get {
+                return ResourceManager.GetString("event18", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to train detectors in track 4 are switched on.
+        /// </summary>
+        internal static string event19 {
+            get {
+                return ResourceManager.GetString("event19", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to general engagement.
+        /// </summary>
+        internal static string event32 {
+            get {
+                return ResourceManager.GetString("event32", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to manual engagement.
+        /// </summary>
+        internal static string event33 {
+            get {
+                return ResourceManager.GetString("event33", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to control device engagement.
+        /// </summary>
+        internal static string event34 {
+            get {
+                return ResourceManager.GetString("event34", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to retained engagement.
+        /// </summary>
+        internal static string event35 {
+            get {
+                return ResourceManager.GetString("event35", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to real time clock updated.
+        /// </summary>
+        internal static string event49 {
+            get {
+                return ResourceManager.GetString("event49", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Event active.
         /// </summary>
         internal static string eventActive {
             get {
@@ -187,6 +340,24 @@ namespace SPA5BlackBoxReader {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Category.
+        /// </summary>
+        internal static string labelCategory {
+            get {
+                return ResourceManager.GetString("labelCategory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Channel.
+        /// </summary>
+        internal static string labelChannel {
+            get {
+                return ResourceManager.GetString("labelChannel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Change language.
         /// </summary>
         internal static string labelChngLang {
@@ -232,11 +403,47 @@ namespace SPA5BlackBoxReader {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Group.
+        /// </summary>
+        internal static string labelGroup {
+            get {
+                return ResourceManager.GetString("labelGroup", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Info.
         /// </summary>
         internal static string labelInfo {
             get {
                 return ResourceManager.GetString("labelInfo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LX Number.
+        /// </summary>
+        internal static string labelLxNumber {
+            get {
+                return ResourceManager.GetString("labelLxNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Alarm/Event name.
+        /// </summary>
+        internal static string labelName {
+            get {
+                return ResourceManager.GetString("labelName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number.
+        /// </summary>
+        internal static string labelNumber {
+            get {
+                return ResourceManager.GetString("labelNumber", resourceCulture);
             }
         }
         
@@ -250,11 +457,29 @@ namespace SPA5BlackBoxReader {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Status.
+        /// </summary>
+        internal static string labelStatus {
+            get {
+                return ResourceManager.GetString("labelStatus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Stop.
         /// </summary>
         internal static string labelStop {
             get {
                 return ResourceManager.GetString("labelStop", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Time.
+        /// </summary>
+        internal static string labelTime {
+            get {
+                return ResourceManager.GetString("labelTime", resourceCulture);
             }
         }
     }

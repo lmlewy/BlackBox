@@ -9,39 +9,13 @@ using System.Resources;
 namespace SPA5BlackBoxReader
 {
     class Message
-    {
-        
-        private int alertNumber;
-        private string alertName;
-        private string alertStatus;
-        private string alertCategory;
-        private string alertGroup;
-
-        public int AlertNumber
-        {
-            get { return alertNumber; }
-        }
-
-        public string AlertName
-        {
-            get { return alertName; }
-        }
-
-        public string AlertStatus
-        {
-            get { return alertStatus; }
-        }
-
+    {   
         ResourceManager resmgr = new ResourceManager("SPA5BlackBoxReader.Lang", typeof(Message).Assembly);
         CultureInfo internalCI = null;
 
         public Message(CultureInfo ci)
         {
             internalCI = ci;
-
-            alertNumber = 0;
-            alertName = "";
-            alertStatus = "";
         }
 
 
@@ -80,7 +54,7 @@ namespace SPA5BlackBoxReader
                     break;
 
                 default:
-
+                    decodedMessage.Add("Message type Error");
                     break;
             }
 
@@ -143,6 +117,11 @@ namespace SPA5BlackBoxReader
         private List<string> DecodeAlert(byte[] alert)
         {
             List<string> decodedAlarm = new List<string>();
+            int alertNumber = 0;
+            string alertName = "";
+            string alertStatus = "";
+            string alertCategory = "";
+            string alertGroup = "";
 
             alertNumber = (alert[1] << 8) + alert[2];
 
@@ -163,6 +142,7 @@ namespace SPA5BlackBoxReader
             decodedAlarm.Add(alertName);
             decodedAlarm.Add(alertStatus);
             decodedAlarm.Add(alertCategory);
+            decodedAlarm.Add(alertGroup);
 
             return decodedAlarm;
         }
@@ -170,26 +150,32 @@ namespace SPA5BlackBoxReader
         private List<string> DecodeEvent(byte[] decEvent)
         {
             List<string> decodedEvent = new List<string>();
+            int eventNumber = 0;
+            string eventName = "";
+            string eventStatus = "";
+            //string eventCategory = "";
+            string eventGroup = "";
 
-            alertNumber = (decEvent[1] << 8) + decEvent[2];
+            eventNumber = (decEvent[1] << 8) + decEvent[2];
 
-            alertName = resmgr.GetString("event" + alertNumber.ToString(), internalCI);
-            if (alertName == null) alertName = "Not Recognized event";
+            eventName = resmgr.GetString("event" + eventNumber.ToString(), internalCI);
+            if (eventName == null) eventName = "Not Recognized event";
 
-            if (decEvent[3] == 0x01) alertStatus = resmgr.GetString("eventNotActive", internalCI);
-            else if (decEvent[3] == 0x02) alertStatus = resmgr.GetString("eventActive" , internalCI);
-            else alertStatus = resmgr.GetString("eventNotRecognized" , internalCI);
+            if (decEvent[3] == 0x01) eventStatus = resmgr.GetString("eventNotActive", internalCI);
+            else if (decEvent[3] == 0x02) eventStatus = resmgr.GetString("eventActive", internalCI);
+            else eventStatus = resmgr.GetString("eventNotRecognized", internalCI);
 
-            if (decEvent[4] == 0x01) alertCategory = resmgr.GetString("eventFirstCategory" , internalCI);
-            else if (decEvent[4] == 0x02) alertCategory = resmgr.GetString("eventSecondCategory" , internalCI);
-            else alertCategory = resmgr.GetString("eventCategoryNotRecognized" , internalCI);
+            //if (decEvent[4] == 0x01) eventCategory = resmgr.GetString("eventFirstCategory", internalCI);
+            //else if (decEvent[4] == 0x02) eventCategory = resmgr.GetString("eventSecondCategory", internalCI);
+            //else eventCategory = resmgr.GetString("eventCategoryNotRecognized", internalCI);
 
-            alertGroup = decEvent[5].ToString();
+            eventGroup = decEvent[5].ToString();
 
-            decodedEvent.Add("Event number " + alertNumber.ToString());
-            decodedEvent.Add(alertName);
-            decodedEvent.Add(alertStatus);
-            decodedEvent.Add(alertCategory);
+            decodedEvent.Add("Event number " + eventNumber.ToString());
+            decodedEvent.Add(eventName);
+            decodedEvent.Add(eventStatus);
+            decodedEvent.Add("");
+            decodedEvent.Add(eventGroup);
 
             return decodedEvent;
         }

@@ -25,7 +25,7 @@ namespace SPA5BlackBoxReader
         private BackgroundWorker decodeMessagesBackgroundWorker = null;
 
         List<string> itemsList = new List<string>();    //to jest szybkie
-        List<string> decodedFramesList = new List<string>();
+        List<string[]> decodedFramesList = new List<string[]>();
 
         //byte[] ramka = new byte[500];
         //List<byte[]> ramkaList = new List<byte[]>();
@@ -42,6 +42,7 @@ namespace SPA5BlackBoxReader
             updateLabels();
 
             richTextBoxBin.Multiline = true;
+            tabPageDecEvent.Dispose();
         }
 
         private void updateLabels()
@@ -166,32 +167,23 @@ namespace SPA5BlackBoxReader
                 }
                 else
                 {
-                    //ListOfFrames decodedList = new ListOfFrames(ci);
-                    //decodedFramesList = decodedList.DecodeFileAsList(fileBytes);
-
-                    //var source = new BindingSource();
-                    ////List<MyStruct> list = new List<MyStruct> { new MyStruct("fff", "b"), new MyStruct("c", "d") };
-                    //source.DataSource = decodedFramesList;
-                    //dataGridViewEventsAndAlarms.DataSource = decodedFramesList.Select(x => new { Value = x }).ToList();
+                    DataTable table = new DataTable();
+                    table.Columns.Add(resmgr.GetString("labelTime", ci), typeof(string));
+                    table.Columns.Add(resmgr.GetString("labelLxNumber", ci), typeof(string));
+                    table.Columns.Add(resmgr.GetString("labelChannel", ci), typeof(string));
+                    table.Columns.Add(resmgr.GetString("labelNumber", ci), typeof(string));
+                    table.Columns.Add(resmgr.GetString("labelName", ci), typeof(string));
+                    table.Columns.Add(resmgr.GetString("labelStatus", ci), typeof(string));
+                    table.Columns.Add(resmgr.GetString("labelCategory", ci), typeof(string));
+                    table.Columns.Add(resmgr.GetString("labelGroup", ci), typeof(string));
 
                     ListOfFrames decodedList = new ListOfFrames(ci);
-                    string[][] decodedFramesTable;
-                    decodedFramesTable = decodedList.DecodeFileAsTable(fileBytes);
-                    //var source = new BindingSource();
-                    //source.DataSource = decodedFramesTable;
-                    //dataGridViewEventsAndAlarms.DataSource = decodedFramesTable.Select(x => new { Value = x }).ToList();
+                    decodedFramesList = decodedList.DecodeFileAsList(fileBytes);
 
-
-                    DataTable table = new DataTable();
-                    table.Columns.Add("Czas", typeof(string));
-                    table.Columns.Add("Kanał", typeof(string));
-                    table.Columns.Add("numer", typeof(string));
-                    table.Columns.Add("tekst", typeof(string));
-                    table.Columns.Add("aktywny", typeof(string));
-
-                    //for (int i = 0; i < decodedFramesTable.GetLength(0) ; i++)
-                    for (int i = 0; i < 1; i++)
-                        table.Rows.Add(decodedFramesTable[i][0], decodedFramesTable[i][1], decodedFramesTable[i][2], decodedFramesTable[i][3], decodedFramesTable[i][4]);
+                    foreach (var row in decodedFramesList)
+                    {
+                        table.Rows.Add(row);
+                    }
 
                     dataGridViewEventsAndAlarms.DataSource = table;
 

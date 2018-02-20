@@ -12,37 +12,62 @@ namespace SPA5BlackBoxReader
     {
         CultureInfo cultureInfo = null;
 
-        //private List<DataFrame> FrameList = new List<DataFrame>();
-        
-
         public ListOfFrames(CultureInfo ci)
         {
             cultureInfo = ci;
         }
 
 
-        public List<string> DecodeFileAsList( byte[] binFile)
+        public List<string[]> DecodeFileAsList( byte[] binFile)
         {
-            List<String> DecodedFrameList = new List<String>();
+            List<string[]> DecodedFrameList = new List<string[]>();
 
-            for (int i = binFile.Length - (1+5); i > 0; i--)
+
+            //// to działa ale mogło by byc szybsze
+            //for (int i = binFile.Length - (1+5); i > 0; i--)
+            //{
+            //    if ((binFile[i] == 0xff) && (binFile[i + 1] == 0xff) && (binFile[i + 2] == 0xff) && (binFile[i + 3] == 0xff) && (binFile[i + 4] != 0xff))
+            //    {
+            //        int frameLenght = (binFile[i + 4] << 8) + binFile[i + 5];
+            //        byte[] b = new byte[frameLenght];
+            //        for (int j = 0; j < frameLenght; j++)
+            //        {
+            //            b[j] = binFile[i + 4 + j];
+            //        }
+            //        DataFrame df = new DataFrame(cultureInfo);
+            //        List<string[]> tempList = df.DecodeDataFrameToList(b);
+
+            //        foreach (string[] s in tempList)
+            //            DecodedFrameList.Add(s);
+            //    }
+            //}
+            //// to działa ale mogło by byc szybsze
+
+            //może jest szybsze
+            int i = binFile.Length - (1+5);
+            do
             {
                 if ((binFile[i] == 0xff) && (binFile[i + 1] == 0xff) && (binFile[i + 2] == 0xff) && (binFile[i + 3] == 0xff) && (binFile[i + 4] != 0xff))
                 {
                     int frameLenght = (binFile[i + 4] << 8) + binFile[i + 5];
                     byte[] b = new byte[frameLenght];
-                    for (int j = 0; j < frameLenght; j++ )
+                    for (int j = 0; j < frameLenght; j++)
                     {
                         b[j] = binFile[i + 4 + j];
                     }
                     DataFrame df = new DataFrame(cultureInfo);
-                    //df.DecodeDataFrame(b);
-                    List<string> l = df.DecodeDataFrameToList(b);
-                    foreach (string s in l)
-                        DecodedFrameList.Add(s);
-                }
+                    List<string[]> tempList = df.DecodeDataFrameToList(b);
 
-            }
+                    foreach (string[] s in tempList)
+                        DecodedFrameList.Add(s);
+
+                    i -= frameLenght;
+                }
+                i--;
+            } while (i > 0);
+
+
+
 
              return DecodedFrameList;
         }
@@ -50,14 +75,14 @@ namespace SPA5BlackBoxReader
         public string[][] DecodeFileAsTable(byte[] binFile)
         {
             string[][] table = new string[10000][];
-            int numberOfFrames = 0;
+            //int numberOfFrames = 0;
 
-            //table[0] = new string[5];
-            //table[0][0] = "aaa";
-            //table[0][1] = "bbb";
-            //table[0][2] = "ccc";
-            //table[0][3] = "ddd";
-            //table[0][4] = "eee";
+            table[0] = new string[5];
+            table[0][0] = "aaa";
+            table[0][1] = "bbb";
+            table[0][2] = "ccc";
+            table[0][3] = "ddd";
+            table[0][4] = "eee";
 
             for (int i = binFile.Length - (1 + 5); i > 0; i--)
             {
@@ -83,12 +108,10 @@ namespace SPA5BlackBoxReader
                     //// put array in array of arrays
                     //tableOfObjects[0] = rowOfObjects;
 
-                    for (int j = 0; j < 4; j++)
+                    for (int j = 0; j < (table2.Length/4) ; j++)
                     {
-                        table[j][] = table2[j];
+                        //table[j][] = table2[j];
                     }
-
-
 
 
                 }
