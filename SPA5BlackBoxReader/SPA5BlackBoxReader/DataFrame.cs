@@ -10,7 +10,7 @@ namespace SPA5BlackBoxReader
 {
     class DataFrame
     {
-        CultureInfo cultureInfo = null;
+        
 
         private int blkLenght;
         private int lxNumber;
@@ -21,14 +21,13 @@ namespace SPA5BlackBoxReader
         
         private int CRC32;
 
-        public DataFrame(CultureInfo c)
+        public DataFrame()
         {
-        cultureInfo = c;
-        blkLenght = 0;
-        lxNumber = 0;
-        blkType = 0;
-        timeStamp = new DateTime(2000, 1, 1, 0, 0, 0);
-        timeStampTick = 0;
+            blkLenght = 0;
+            lxNumber = 0;
+            blkType = 0;
+            timeStamp = new DateTime(2000, 1, 1, 0, 0, 0);
+            timeStampTick = 0;
         }
 
         public List<string[]> DecodeDataFrameToList(byte[] frame)
@@ -59,7 +58,7 @@ namespace SPA5BlackBoxReader
                             byteMessage[b] = frame[16+(8*i)+b];
                         }
 
-                        Message mess = new Message(cultureInfo);
+                        Message mess = new Message();
                         List<string> tempList = new List<string>();
 
                         tempList.Add(timeStamp.ToString());
@@ -111,7 +110,7 @@ namespace SPA5BlackBoxReader
                             byteMessage[b] = frame[16 + (8*i) + b];
                         }
 
-                        Message mess = new Message(cultureInfo);
+                        Message mess = new Message();
                         string[] t = new string[4];
                         t = mess.DecodeMessageToTable(byteMessage);
 

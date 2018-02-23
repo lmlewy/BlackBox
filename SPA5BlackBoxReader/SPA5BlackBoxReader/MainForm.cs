@@ -39,6 +39,8 @@ namespace SPA5BlackBoxReader
         private void MainForm_Load(object sender, EventArgs e)
         {
             ci = new CultureInfo("en-GB");
+            CultureInfo.DefaultThreadCurrentCulture = ci;
+
             updateLabels();
 
             richTextBoxBin.Multiline = true;
@@ -141,7 +143,7 @@ namespace SPA5BlackBoxReader
                 }
                 else if (tabControl.SelectedTab == tabControl.TabPages["tabPageDecEvent"])
                 {
-                    ListOfFrames decodedList = new ListOfFrames(ci);
+                    ListOfFrames decodedList = new ListOfFrames();
                     decodedFramesList = decodedList.DecodeFileAsList(fileBytes);
 
                     richTextBoxZdekodowane.Clear();
@@ -177,7 +179,7 @@ namespace SPA5BlackBoxReader
                     table.Columns.Add(resmgr.GetString("labelCategory", ci), typeof(string));
                     table.Columns.Add(resmgr.GetString("labelGroup", ci), typeof(string));
 
-                    ListOfFrames decodedList = new ListOfFrames(ci);
+                    ListOfFrames decodedList = new ListOfFrames();
                     decodedFramesList = decodedList.DecodeFileAsList(fileBytes);
 
                     foreach (var row in decodedFramesList)

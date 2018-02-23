@@ -13,9 +13,9 @@ namespace SPA5BlackBoxReader
         ResourceManager resmgr = new ResourceManager("SPA5BlackBoxReader.Lang", typeof(Message).Assembly);
         CultureInfo internalCI = null;
 
-        public Message(CultureInfo ci)
+        public Message()
         {
-            internalCI = ci;
+            internalCI = CultureInfo.DefaultThreadCurrentCulture;
         }
 
 
@@ -126,6 +126,7 @@ namespace SPA5BlackBoxReader
             alertNumber = (alert[1] << 8) + alert[2];
 
             alertName = resmgr.GetString("alert" + alertNumber.ToString(), internalCI);
+            //alertName = resmgr.GetString("alert" + alertNumber.ToString(), ci);
             if (alertName == null) alertName = "Not Recognized event";
 
             if (alert[3] == 0x01) alertStatus = resmgr.GetString("alertNotActive", internalCI);
@@ -207,4 +208,25 @@ namespace SPA5BlackBoxReader
 
 
     }
+
+
+    interface IMessage
+    {
+        string DecodeMessage();
+    }
+
+
+    class EheDiagnostics : IMessage
+    {
+
+        public string DecodeMessage()
+        {
+
+            return "EHE-2 diagnostics";
+        }
+
+    }
+
+
+
 }

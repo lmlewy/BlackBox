@@ -61,7 +61,7 @@ namespace SPA5BlackBoxReader {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to reserve.
+        ///   Looks up a localized string similar to Reserve.
         /// </summary>
         internal static string alert1 {
             get {
@@ -70,7 +70,601 @@ namespace SPA5BlackBoxReader {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to no battery charging of channel A.
+        ///   Looks up a localized string similar to Battery voltage of channel A is too low.
+        /// </summary>
+        internal static string alert10 {
+            get {
+                return ResourceManager.GetString("alert10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to earth leakage detection failure of channel A (TH1).
+        /// </summary>
+        internal static string alert104 {
+            get {
+                return ResourceManager.GetString("alert104", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to earth leakage detection failure of channel A (TH2).
+        /// </summary>
+        internal static string alert105 {
+            get {
+                return ResourceManager.GetString("alert105", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to earth leakage detection failure of channel B (TH1).
+        /// </summary>
+        internal static string alert106 {
+            get {
+                return ResourceManager.GetString("alert106", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to earth leakage detection failure of channel B (TH2).
+        /// </summary>
+        internal static string alert107 {
+            get {
+                return ResourceManager.GetString("alert107", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to earth leakage detection failure of channel C (TH1).
+        /// </summary>
+        internal static string alert108 {
+            get {
+                return ResourceManager.GetString("alert108", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to earth leakage detection failure of channel C (TH2).
+        /// </summary>
+        internal static string alert109 {
+            get {
+                return ResourceManager.GetString("alert109", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Battery voltage of channel B is too low.
+        /// </summary>
+        internal static string alert11 {
+            get {
+                return ResourceManager.GetString("alert11", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to earth leakage detection failure of channel D (TH1).
+        /// </summary>
+        internal static string alert110 {
+            get {
+                return ResourceManager.GetString("alert110", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to earth leakage detection failure of channel D (TH2).
+        /// </summary>
+        internal static string alert111 {
+            get {
+                return ResourceManager.GetString("alert111", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Battery voltage of channel C is too low.
+        /// </summary>
+        internal static string alert12 {
+            get {
+                return ResourceManager.GetString("alert12", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to failure of red road signal YN.
+        /// </summary>
+        internal static string alert128 {
+            get {
+                return ResourceManager.GetString("alert128", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to failure of red road signal ZN.
+        /// </summary>
+        internal static string alert129 {
+            get {
+                return ResourceManager.GetString("alert129", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Battery voltage of channel D is too low.
+        /// </summary>
+        internal static string alert13 {
+            get {
+                return ResourceManager.GetString("alert13", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to failure of red road signal YO.
+        /// </summary>
+        internal static string alert130 {
+            get {
+                return ResourceManager.GetString("alert130", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to failure of red road signal ZO.
+        /// </summary>
+        internal static string alert131 {
+            get {
+                return ResourceManager.GetString("alert131", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to failure of red road signal YN2.
+        /// </summary>
+        internal static string alert132 {
+            get {
+                return ResourceManager.GetString("alert132", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to failure of red road signal ZN2.
+        /// </summary>
+        internal static string alert133 {
+            get {
+                return ResourceManager.GetString("alert133", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to failure of red road signal YO2.
+        /// </summary>
+        internal static string alert134 {
+            get {
+                return ResourceManager.GetString("alert134", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to failure of red road signal ZO2.
+        /// </summary>
+        internal static string alert135 {
+            get {
+                return ResourceManager.GetString("alert135", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to failure of amber road signal YN.
+        /// </summary>
+        internal static string alert136 {
+            get {
+                return ResourceManager.GetString("alert136", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to failure of amber road signal ZN.
+        /// </summary>
+        internal static string alert137 {
+            get {
+                return ResourceManager.GetString("alert137", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to failure of amber road signal YO.
+        /// </summary>
+        internal static string alert138 {
+            get {
+                return ResourceManager.GetString("alert138", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to failure of amber road signal ZO.
+        /// </summary>
+        internal static string alert139 {
+            get {
+                return ResourceManager.GetString("alert139", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reserve.
+        /// </summary>
+        internal static string alert14 {
+            get {
+                return ResourceManager.GetString("alert14", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to failure of amber road signal YN2.
+        /// </summary>
+        internal static string alert140 {
+            get {
+                return ResourceManager.GetString("alert140", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to failure of amber road signal ZN2.
+        /// </summary>
+        internal static string alert141 {
+            get {
+                return ResourceManager.GetString("alert141", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to failure of amber road signal YO2.
+        /// </summary>
+        internal static string alert142 {
+            get {
+                return ResourceManager.GetString("alert142", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to failure of amber road signal ZO2.
+        /// </summary>
+        internal static string alert143 {
+            get {
+                return ResourceManager.GetString("alert143", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to failure of red man standing signal YN.
+        /// </summary>
+        internal static string alert144 {
+            get {
+                return ResourceManager.GetString("alert144", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to failure of red man standing signal ZN.
+        /// </summary>
+        internal static string alert145 {
+            get {
+                return ResourceManager.GetString("alert145", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to failure of red man standing signal YO.
+        /// </summary>
+        internal static string alert146 {
+            get {
+                return ResourceManager.GetString("alert146", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to failure of red man standing signal ZO.
+        /// </summary>
+        internal static string alert147 {
+            get {
+                return ResourceManager.GetString("alert147", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to failure of red man standing signal YN2.
+        /// </summary>
+        internal static string alert148 {
+            get {
+                return ResourceManager.GetString("alert148", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to failure of red man standing signal ZN2.
+        /// </summary>
+        internal static string alert149 {
+            get {
+                return ResourceManager.GetString("alert149", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reserve.
+        /// </summary>
+        internal static string alert15 {
+            get {
+                return ResourceManager.GetString("alert15", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to failure of red man standing signal YO2.
+        /// </summary>
+        internal static string alert150 {
+            get {
+                return ResourceManager.GetString("alert150", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to failure of red man standing signal ZO2.
+        /// </summary>
+        internal static string alert151 {
+            get {
+                return ResourceManager.GetString("alert151", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to critical failure of red road signal YN.
+        /// </summary>
+        internal static string alert152 {
+            get {
+                return ResourceManager.GetString("alert152", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to critical failure of red road signal ZN.
+        /// </summary>
+        internal static string alert153 {
+            get {
+                return ResourceManager.GetString("alert153", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to critical failure of red road signal YO.
+        /// </summary>
+        internal static string alert154 {
+            get {
+                return ResourceManager.GetString("alert154", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to critical failure of red road signal ZO.
+        /// </summary>
+        internal static string alert155 {
+            get {
+                return ResourceManager.GetString("alert155", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to critical failure of red road signal YN2.
+        /// </summary>
+        internal static string alert156 {
+            get {
+                return ResourceManager.GetString("alert156", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to critical failure of red road signal ZN2.
+        /// </summary>
+        internal static string alert157 {
+            get {
+                return ResourceManager.GetString("alert157", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to critical failure of red road signal YO2.
+        /// </summary>
+        internal static string alert158 {
+            get {
+                return ResourceManager.GetString("alert158", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to critical failure of red road signal ZO2.
+        /// </summary>
+        internal static string alert159 {
+            get {
+                return ResourceManager.GetString("alert159", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Discrepancy of sections state in channels of LX controllers.
+        /// </summary>
+        internal static string alert16 {
+            get {
+                return ResourceManager.GetString("alert16", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to failure of audible alarm YN.
+        /// </summary>
+        internal static string alert168 {
+            get {
+                return ResourceManager.GetString("alert168", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to failure of audible alarm ZN.
+        /// </summary>
+        internal static string alert169 {
+            get {
+                return ResourceManager.GetString("alert169", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Discrepancy of system work mode in channels of LX controllers.
+        /// </summary>
+        internal static string alert17 {
+            get {
+                return ResourceManager.GetString("alert17", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to failure of audible alarm YO.
+        /// </summary>
+        internal static string alert170 {
+            get {
+                return ResourceManager.GetString("alert170", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to failure of audible alarm ZO.
+        /// </summary>
+        internal static string alert171 {
+            get {
+                return ResourceManager.GetString("alert171", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Discrepancy of engagement in channels of LX controllers.
+        /// </summary>
+        internal static string alert18 {
+            get {
+                return ResourceManager.GetString("alert18", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to barrier machine YN not ready.
+        /// </summary>
+        internal static string alert184 {
+            get {
+                return ResourceManager.GetString("alert184", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to barrier machine ZN not ready.
+        /// </summary>
+        internal static string alert185 {
+            get {
+                return ResourceManager.GetString("alert185", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to barrier machine YO not ready.
+        /// </summary>
+        internal static string alert186 {
+            get {
+                return ResourceManager.GetString("alert186", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to barrier machine ZO not ready.
+        /// </summary>
+        internal static string alert187 {
+            get {
+                return ResourceManager.GetString("alert187", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to barrier machine AUX1 not ready.
+        /// </summary>
+        internal static string alert188 {
+            get {
+                return ResourceManager.GetString("alert188", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to barrier machine AUX2 not ready.
+        /// </summary>
+        internal static string alert189 {
+            get {
+                return ResourceManager.GetString("alert189", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Failure of concurrent switch-on of train detectors.
+        /// </summary>
+        internal static string alert19 {
+            get {
+                return ResourceManager.GetString("alert19", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to broken barrier boom YN.
+        /// </summary>
+        internal static string alert192 {
+            get {
+                return ResourceManager.GetString("alert192", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to broken barrier boom ZN.
+        /// </summary>
+        internal static string alert193 {
+            get {
+                return ResourceManager.GetString("alert193", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to broken barrier boom YO.
+        /// </summary>
+        internal static string alert194 {
+            get {
+                return ResourceManager.GetString("alert194", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to broken barrier boom ZO.
+        /// </summary>
+        internal static string alert195 {
+            get {
+                return ResourceManager.GetString("alert195", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to broken barrier boom AUX1.
+        /// </summary>
+        internal static string alert196 {
+            get {
+                return ResourceManager.GetString("alert196", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to broken barrier boom AUX2.
+        /// </summary>
+        internal static string alert197 {
+            get {
+                return ResourceManager.GetString("alert197", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No battery charging of channel A.
         /// </summary>
         internal static string alert2 {
             get {
@@ -79,7 +673,871 @@ namespace SPA5BlackBoxReader {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to no battery charging of channel B.
+        ///   Looks up a localized string similar to failure of barrier machine position YN.
+        /// </summary>
+        internal static string alert200 {
+            get {
+                return ResourceManager.GetString("alert200", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to failure of barrier machine position ZN.
+        /// </summary>
+        internal static string alert201 {
+            get {
+                return ResourceManager.GetString("alert201", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to failure of barrier machine position YO.
+        /// </summary>
+        internal static string alert202 {
+            get {
+                return ResourceManager.GetString("alert202", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to failure of barrier machine position ZO.
+        /// </summary>
+        internal static string alert203 {
+            get {
+                return ResourceManager.GetString("alert203", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to failure of barrier machine position AUX1.
+        /// </summary>
+        internal static string alert204 {
+            get {
+                return ResourceManager.GetString("alert204", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to failure of barrier machine position AUX2.
+        /// </summary>
+        internal static string alert205 {
+            get {
+                return ResourceManager.GetString("alert205", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to overcurrent failure of barrier YN.
+        /// </summary>
+        internal static string alert208 {
+            get {
+                return ResourceManager.GetString("alert208", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to overcurrent failure of barrier ZN.
+        /// </summary>
+        internal static string alert209 {
+            get {
+                return ResourceManager.GetString("alert209", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to overcurrent failure of barrier YO.
+        /// </summary>
+        internal static string alert210 {
+            get {
+                return ResourceManager.GetString("alert210", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to overcurrent failure of barrier ZO.
+        /// </summary>
+        internal static string alert211 {
+            get {
+                return ResourceManager.GetString("alert211", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to overcurrent failure of barrier AUX1.
+        /// </summary>
+        internal static string alert212 {
+            get {
+                return ResourceManager.GetString("alert212", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to overcurrent failure of barrier AUX2.
+        /// </summary>
+        internal static string alert213 {
+            get {
+                return ResourceManager.GetString("alert213", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to current transducer failure of barrier YN.
+        /// </summary>
+        internal static string alert216 {
+            get {
+                return ResourceManager.GetString("alert216", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to current transducer failure of barrier ZN.
+        /// </summary>
+        internal static string alert217 {
+            get {
+                return ResourceManager.GetString("alert217", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to current transducer failure of barrier YO.
+        /// </summary>
+        internal static string alert218 {
+            get {
+                return ResourceManager.GetString("alert218", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to current transducer failure of barrier ZO.
+        /// </summary>
+        internal static string alert219 {
+            get {
+                return ResourceManager.GetString("alert219", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to current transducer failure of barrier AUX1.
+        /// </summary>
+        internal static string alert220 {
+            get {
+                return ResourceManager.GetString("alert220", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to current transducer failure of barrier AUX2.
+        /// </summary>
+        internal static string alert221 {
+            get {
+                return ResourceManager.GetString("alert221", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to communication failure of wheel detector WD1.
+        /// </summary>
+        internal static string alert224 {
+            get {
+                return ResourceManager.GetString("alert224", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to communication failure of wheel detector WD2.
+        /// </summary>
+        internal static string alert225 {
+            get {
+                return ResourceManager.GetString("alert225", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to communication failure of wheel detector WD3.
+        /// </summary>
+        internal static string alert226 {
+            get {
+                return ResourceManager.GetString("alert226", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to communication failure of wheel detector WD4.
+        /// </summary>
+        internal static string alert227 {
+            get {
+                return ResourceManager.GetString("alert227", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to communication failure of wheel detector WD5.
+        /// </summary>
+        internal static string alert228 {
+            get {
+                return ResourceManager.GetString("alert228", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to communication failure of wheel detector WD6.
+        /// </summary>
+        internal static string alert229 {
+            get {
+                return ResourceManager.GetString("alert229", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to communication failure of wheel detector WD7.
+        /// </summary>
+        internal static string alert230 {
+            get {
+                return ResourceManager.GetString("alert230", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to communication failure of wheel detector WD8.
+        /// </summary>
+        internal static string alert231 {
+            get {
+                return ResourceManager.GetString("alert231", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to communication failure of wheel detector WD9.
+        /// </summary>
+        internal static string alert232 {
+            get {
+                return ResourceManager.GetString("alert232", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to communication failure of wheel detector WD10.
+        /// </summary>
+        internal static string alert233 {
+            get {
+                return ResourceManager.GetString("alert233", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to communication failure of wheel detector WD11.
+        /// </summary>
+        internal static string alert234 {
+            get {
+                return ResourceManager.GetString("alert234", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to communication failure of wheel detector WD12.
+        /// </summary>
+        internal static string alert235 {
+            get {
+                return ResourceManager.GetString("alert235", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to communication failure of wheel detector WD13.
+        /// </summary>
+        internal static string alert236 {
+            get {
+                return ResourceManager.GetString("alert236", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to communication failure of wheel detector WD14.
+        /// </summary>
+        internal static string alert237 {
+            get {
+                return ResourceManager.GetString("alert237", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to communication failure of wheel detector WD15.
+        /// </summary>
+        internal static string alert238 {
+            get {
+                return ResourceManager.GetString("alert238", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to communication failure of wheel detector WD16.
+        /// </summary>
+        internal static string alert239 {
+            get {
+                return ResourceManager.GetString("alert239", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Wheel detectors communication failure.
+        /// </summary>
+        internal static string alert24 {
+            get {
+                return ResourceManager.GetString("alert24", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to hardware failure of wheel detector WD1.
+        /// </summary>
+        internal static string alert240 {
+            get {
+                return ResourceManager.GetString("alert240", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to hardware failure of wheel detector WD2.
+        /// </summary>
+        internal static string alert241 {
+            get {
+                return ResourceManager.GetString("alert241", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to hardware failure of wheel detector WD3.
+        /// </summary>
+        internal static string alert242 {
+            get {
+                return ResourceManager.GetString("alert242", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to hardware failure of wheel detector WD4.
+        /// </summary>
+        internal static string alert243 {
+            get {
+                return ResourceManager.GetString("alert243", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to hardware failure of wheel detector WD5.
+        /// </summary>
+        internal static string alert244 {
+            get {
+                return ResourceManager.GetString("alert244", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to hardware failure of wheel detector WD6.
+        /// </summary>
+        internal static string alert245 {
+            get {
+                return ResourceManager.GetString("alert245", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to hardware failure of wheel detector WD7.
+        /// </summary>
+        internal static string alert246 {
+            get {
+                return ResourceManager.GetString("alert246", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to hardware failure of wheel detector WD8.
+        /// </summary>
+        internal static string alert247 {
+            get {
+                return ResourceManager.GetString("alert247", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to hardware failure of wheel detector WD9.
+        /// </summary>
+        internal static string alert248 {
+            get {
+                return ResourceManager.GetString("alert248", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to hardware failure of wheel detector WD10.
+        /// </summary>
+        internal static string alert249 {
+            get {
+                return ResourceManager.GetString("alert249", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Wheel detectors failure.
+        /// </summary>
+        internal static string alert25 {
+            get {
+                return ResourceManager.GetString("alert25", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to hardware failure of wheel detector WD11.
+        /// </summary>
+        internal static string alert250 {
+            get {
+                return ResourceManager.GetString("alert250", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to hardware failure of wheel detector WD12.
+        /// </summary>
+        internal static string alert251 {
+            get {
+                return ResourceManager.GetString("alert251", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to hardware failure of wheel detector WD13.
+        /// </summary>
+        internal static string alert252 {
+            get {
+                return ResourceManager.GetString("alert252", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to hardware failure of wheel detector WD14.
+        /// </summary>
+        internal static string alert253 {
+            get {
+                return ResourceManager.GetString("alert253", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to hardware failure of wheel detector WD15.
+        /// </summary>
+        internal static string alert254 {
+            get {
+                return ResourceManager.GetString("alert254", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to hardware failure of wheel detector WD16.
+        /// </summary>
+        internal static string alert255 {
+            get {
+                return ResourceManager.GetString("alert255", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to interlocking failure of signal XZGR.
+        /// </summary>
+        internal static string alert256 {
+            get {
+                return ResourceManager.GetString("alert256", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to interlocking failure of signal (DN)_SPR.
+        /// </summary>
+        internal static string alert257 {
+            get {
+                return ResourceManager.GetString("alert257", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to interlocking failure of signal (RAISE)_NZPR.
+        /// </summary>
+        internal static string alert258 {
+            get {
+                return ResourceManager.GetString("alert258", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to interlocking failure of signal ASPR.
+        /// </summary>
+        internal static string alert259 {
+            get {
+                return ResourceManager.GetString("alert259", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to interlocking failure of signal XNSKPR.
+        /// </summary>
+        internal static string alert260 {
+            get {
+                return ResourceManager.GetString("alert260", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to interlocking failure of signal (RAISE)_N2PR.
+        /// </summary>
+        internal static string alert261 {
+            get {
+                return ResourceManager.GetString("alert261", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to reserved.
+        /// </summary>
+        internal static string alert262 {
+            get {
+                return ResourceManager.GetString("alert262", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to reserved.
+        /// </summary>
+        internal static string alert263 {
+            get {
+                return ResourceManager.GetString("alert263", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to interlocking failure of signal (ABS)_LPR.
+        /// </summary>
+        internal static string alert264 {
+            get {
+                return ResourceManager.GetString("alert264", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to interlocking failure of signal (ABS)_LPZR.
+        /// </summary>
+        internal static string alert265 {
+            get {
+                return ResourceManager.GetString("alert265", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to interlocking failure of signal TAR.
+        /// </summary>
+        internal static string alert266 {
+            get {
+                return ResourceManager.GetString("alert266", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to interlocking failure of signal (DN)_S2PR.
+        /// </summary>
+        internal static string alert267 {
+            get {
+                return ResourceManager.GetString("alert267", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to interlocking failure of signal (DN)_S2PZR.
+        /// </summary>
+        internal static string alert268 {
+            get {
+                return ResourceManager.GetString("alert268", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to interlocking failure of signal XZR.
+        /// </summary>
+        internal static string alert269 {
+            get {
+                return ResourceManager.GetString("alert269", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to interlocking failure of signal NL2PR.
+        /// </summary>
+        internal static string alert270 {
+            get {
+                return ResourceManager.GetString("alert270", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to interlocking failure of signal LC_LOCKED.
+        /// </summary>
+        internal static string alert271 {
+            get {
+                return ResourceManager.GetString("alert271", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LCU failure of signal RAISE.
+        /// </summary>
+        internal static string alert272 {
+            get {
+                return ResourceManager.GetString("alert272", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LCU failure of signal NORMAL.
+        /// </summary>
+        internal static string alert273 {
+            get {
+                return ResourceManager.GetString("alert273", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LCU failure of signal LOWER.
+        /// </summary>
+        internal static string alert274 {
+            get {
+                return ResourceManager.GetString("alert274", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to reserved.
+        /// </summary>
+        internal static string alert275 {
+            get {
+                return ResourceManager.GetString("alert275", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LCU failure of signal STOP.
+        /// </summary>
+        internal static string alert276 {
+            get {
+                return ResourceManager.GetString("alert276", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LCU failure of signal HAND.
+        /// </summary>
+        internal static string alert277 {
+            get {
+                return ResourceManager.GetString("alert277", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to reserved.
+        /// </summary>
+        internal static string alert278 {
+            get {
+                return ResourceManager.GetString("alert278", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to reserved.
+        /// </summary>
+        internal static string alert279 {
+            get {
+                return ResourceManager.GetString("alert279", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to XCU failure of signal NORMAL.
+        /// </summary>
+        internal static string alert280 {
+            get {
+                return ResourceManager.GetString("alert280", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to reserved.
+        /// </summary>
+        internal static string alert281 {
+            get {
+                return ResourceManager.GetString("alert281", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to XCU failure of signal SIGNALS_ON.
+        /// </summary>
+        internal static string alert282 {
+            get {
+                return ResourceManager.GetString("alert282", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to XCU failure of signal CROSS_CLEAR.
+        /// </summary>
+        internal static string alert283 {
+            get {
+                return ResourceManager.GetString("alert283", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to reserved.
+        /// </summary>
+        internal static string alert284 {
+            get {
+                return ResourceManager.GetString("alert284", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to reserved.
+        /// </summary>
+        internal static string alert285 {
+            get {
+                return ResourceManager.GetString("alert285", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OD failure of signal START.
+        /// </summary>
+        internal static string alert286 {
+            get {
+                return ResourceManager.GetString("alert286", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OD failure of signal STOP.
+        /// </summary>
+        internal static string alert287 {
+            get {
+                return ResourceManager.GetString("alert287", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to reserved.
+        /// </summary>
+        internal static string alert288 {
+            get {
+                return ResourceManager.GetString("alert288", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to POD failure of signal FRE.
+        /// </summary>
+        internal static string alert289 {
+            get {
+                return ResourceManager.GetString("alert289", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to POD failure of signal ACT.
+        /// </summary>
+        internal static string alert290 {
+            get {
+                return ResourceManager.GetString("alert290", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to POD failure of signal FLT.
+        /// </summary>
+        internal static string alert291 {
+            get {
+                return ResourceManager.GetString("alert291", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to POD failure.
+        /// </summary>
+        internal static string alert292 {
+            get {
+                return ResourceManager.GetString("alert292", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to COD low level failure of channel A.
+        /// </summary>
+        internal static string alert293 {
+            get {
+                return ResourceManager.GetString("alert293", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to COD high level failure of channel A.
+        /// </summary>
+        internal static string alert294 {
+            get {
+                return ResourceManager.GetString("alert294", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to COD low level failure of channel B.
+        /// </summary>
+        internal static string alert295 {
+            get {
+                return ResourceManager.GetString("alert295", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to COD high level failure of channel B.
+        /// </summary>
+        internal static string alert296 {
+            get {
+                return ResourceManager.GetString("alert296", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to COD low level failure of channel C.
+        /// </summary>
+        internal static string alert297 {
+            get {
+                return ResourceManager.GetString("alert297", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to COD high level failure of channel C.
+        /// </summary>
+        internal static string alert298 {
+            get {
+                return ResourceManager.GetString("alert298", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to COD low level failure of channel D.
+        /// </summary>
+        internal static string alert299 {
+            get {
+                return ResourceManager.GetString("alert299", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No battery charging of channel B.
         /// </summary>
         internal static string alert3 {
             get {
@@ -88,7 +1546,61 @@ namespace SPA5BlackBoxReader {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to no battery charging of channel C.
+        ///   Looks up a localized string similar to COD high level failure of channel D.
+        /// </summary>
+        internal static string alert300 {
+            get {
+                return ResourceManager.GetString("alert300", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to BOD12 failure.
+        /// </summary>
+        internal static string alert301 {
+            get {
+                return ResourceManager.GetString("alert301", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to BOD34 failure.
+        /// </summary>
+        internal static string alert302 {
+            get {
+                return ResourceManager.GetString("alert302", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to interlocking failure of signal TAZPR.
+        /// </summary>
+        internal static string alert308 {
+            get {
+                return ResourceManager.GetString("alert308", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Audible alarms communication failure.
+        /// </summary>
+        internal static string alert32 {
+            get {
+                return ResourceManager.GetString("alert32", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Audible alarms hardware failure.
+        /// </summary>
+        internal static string alert33 {
+            get {
+                return ResourceManager.GetString("alert33", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No battery charging of channel C.
         /// </summary>
         internal static string alert4 {
             get {
@@ -97,11 +1609,245 @@ namespace SPA5BlackBoxReader {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to no battery charging of channel D.
+        ///   Looks up a localized string similar to Red road signals communication failure.
+        /// </summary>
+        internal static string alert48 {
+            get {
+                return ResourceManager.GetString("alert48", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Red road signals hardware failure.
+        /// </summary>
+        internal static string alert49 {
+            get {
+                return ResourceManager.GetString("alert49", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No battery charging of channel D.
         /// </summary>
         internal static string alert5 {
             get {
                 return ResourceManager.GetString("alert5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Amber road signals communication failure.
+        /// </summary>
+        internal static string alert50 {
+            get {
+                return ResourceManager.GetString("alert50", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Amber road signals hardware failure.
+        /// </summary>
+        internal static string alert51 {
+            get {
+                return ResourceManager.GetString("alert51", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Red man standing signals communication failure.
+        /// </summary>
+        internal static string alert52 {
+            get {
+                return ResourceManager.GetString("alert52", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Red man standing signals hardware failure.
+        /// </summary>
+        internal static string alert53 {
+            get {
+                return ResourceManager.GetString("alert53", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Failure of barriers direction of movement.
+        /// </summary>
+        internal static string alert56 {
+            get {
+                return ResourceManager.GetString("alert56", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Failure of exit barriers direction of movement.
+        /// </summary>
+        internal static string alert57 {
+            get {
+                return ResourceManager.GetString("alert57", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Door of control cabinet is open.
+        /// </summary>
+        internal static string alert6 {
+            get {
+                return ResourceManager.GetString("alert6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Failure of Crossing Clear Unit.
+        /// </summary>
+        internal static string alert63 {
+            get {
+                return ResourceManager.GetString("alert63", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Failure of Local Control Unit.
+        /// </summary>
+        internal static string alert64 {
+            get {
+                return ResourceManager.GetString("alert64", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Failure of Signal Box control panel.
+        /// </summary>
+        internal static string alert65 {
+            get {
+                return ResourceManager.GetString("alert65", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Failure of EOD module.
+        /// </summary>
+        internal static string alert7 {
+            get {
+                return ResourceManager.GetString("alert7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Failure of interlocking interface.
+        /// </summary>
+        internal static string alert72 {
+            get {
+                return ResourceManager.GetString("alert72", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Failure of system operation mode switch.
+        /// </summary>
+        internal static string alert8 {
+            get {
+                return ResourceManager.GetString("alert8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Failure of occupancy sequence in track 1.
+        /// </summary>
+        internal static string alert80 {
+            get {
+                return ResourceManager.GetString("alert80", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Failure of occupancy sequence in track 2.
+        /// </summary>
+        internal static string alert81 {
+            get {
+                return ResourceManager.GetString("alert81", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Failure of occupancy sequence in track 3.
+        /// </summary>
+        internal static string alert82 {
+            get {
+                return ResourceManager.GetString("alert82", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Failure of occupancy sequence in track 4.
+        /// </summary>
+        internal static string alert83 {
+            get {
+                return ResourceManager.GetString("alert83", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to section in track 1 is occupied too long.
+        /// </summary>
+        internal static string alert88 {
+            get {
+                return ResourceManager.GetString("alert88", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to section in track 2 is occupied too long.
+        /// </summary>
+        internal static string alert89 {
+            get {
+                return ResourceManager.GetString("alert89", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fire danger detected.
+        /// </summary>
+        internal static string alert9 {
+            get {
+                return ResourceManager.GetString("alert9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to section in track 3 is occupied too long.
+        /// </summary>
+        internal static string alert90 {
+            get {
+                return ResourceManager.GetString("alert90", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to section in track 4 is occupied too long.
+        /// </summary>
+        internal static string alert91 {
+            get {
+                return ResourceManager.GetString("alert91", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to failure of event logger.
+        /// </summary>
+        internal static string alert96 {
+            get {
+                return ResourceManager.GetString("alert96", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to failure of event logger backup.
+        /// </summary>
+        internal static string alert97 {
+            get {
+                return ResourceManager.GetString("alert97", resourceCulture);
             }
         }
         
@@ -187,7 +1933,223 @@ namespace SPA5BlackBoxReader {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to train detectors in track 1 are switched on.
+        ///   Looks up a localized string similar to red road signal YN is active.
+        /// </summary>
+        internal static string event127 {
+            get {
+                return ResourceManager.GetString("event127", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to red road signal ZN is active.
+        /// </summary>
+        internal static string event128 {
+            get {
+                return ResourceManager.GetString("event128", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to red road signal YO is active.
+        /// </summary>
+        internal static string event129 {
+            get {
+                return ResourceManager.GetString("event129", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to red road signal ZO is active.
+        /// </summary>
+        internal static string event130 {
+            get {
+                return ResourceManager.GetString("event130", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to red road signal YN2 is active.
+        /// </summary>
+        internal static string event131 {
+            get {
+                return ResourceManager.GetString("event131", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to red road signal ZN2 is active.
+        /// </summary>
+        internal static string event132 {
+            get {
+                return ResourceManager.GetString("event132", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to red road signal YO2 is active.
+        /// </summary>
+        internal static string event133 {
+            get {
+                return ResourceManager.GetString("event133", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to red road signal ZO2 is active.
+        /// </summary>
+        internal static string event134 {
+            get {
+                return ResourceManager.GetString("event134", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to amber road signal YN is active.
+        /// </summary>
+        internal static string event135 {
+            get {
+                return ResourceManager.GetString("event135", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to amber road signal ZN is active.
+        /// </summary>
+        internal static string event136 {
+            get {
+                return ResourceManager.GetString("event136", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to amber road signal YO is active.
+        /// </summary>
+        internal static string event137 {
+            get {
+                return ResourceManager.GetString("event137", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to amber road signal ZO is active.
+        /// </summary>
+        internal static string event138 {
+            get {
+                return ResourceManager.GetString("event138", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to amber road signal YN2 is active.
+        /// </summary>
+        internal static string event139 {
+            get {
+                return ResourceManager.GetString("event139", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to amber road signal ZN2 is active.
+        /// </summary>
+        internal static string event140 {
+            get {
+                return ResourceManager.GetString("event140", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to amber road signal YO2 is active.
+        /// </summary>
+        internal static string event141 {
+            get {
+                return ResourceManager.GetString("event141", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to amber road signal ZO2 is active.
+        /// </summary>
+        internal static string event142 {
+            get {
+                return ResourceManager.GetString("event142", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to red man standing signal YN is active.
+        /// </summary>
+        internal static string event143 {
+            get {
+                return ResourceManager.GetString("event143", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to red man standing signal ZN is active.
+        /// </summary>
+        internal static string event144 {
+            get {
+                return ResourceManager.GetString("event144", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to red man standing signal YO is active.
+        /// </summary>
+        internal static string event145 {
+            get {
+                return ResourceManager.GetString("event145", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to red man standing signal ZO is active.
+        /// </summary>
+        internal static string event146 {
+            get {
+                return ResourceManager.GetString("event146", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to red man standing signal YN2 is active.
+        /// </summary>
+        internal static string event147 {
+            get {
+                return ResourceManager.GetString("event147", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to red man standing signal ZN2 is active.
+        /// </summary>
+        internal static string event148 {
+            get {
+                return ResourceManager.GetString("event148", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to red man standing signal YO2 is active.
+        /// </summary>
+        internal static string event149 {
+            get {
+                return ResourceManager.GetString("event149", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to red man standing signal ZO2 is active.
+        /// </summary>
+        internal static string event150 {
+            get {
+                return ResourceManager.GetString("event150", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Train detectors in track 1 are switched on.
         /// </summary>
         internal static string event16 {
             get {
@@ -196,7 +2158,25 @@ namespace SPA5BlackBoxReader {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to train detectors in track 2 are switched on.
+        ///   Looks up a localized string similar to audible alarm YN is active.
+        /// </summary>
+        internal static string event168 {
+            get {
+                return ResourceManager.GetString("event168", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to audible alarm ZN is active.
+        /// </summary>
+        internal static string event169 {
+            get {
+                return ResourceManager.GetString("event169", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Train detectors in track 2 are switched on.
         /// </summary>
         internal static string event17 {
             get {
@@ -205,7 +2185,25 @@ namespace SPA5BlackBoxReader {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to train detectors in track 3 are switched on.
+        ///   Looks up a localized string similar to audible alarm YO is active.
+        /// </summary>
+        internal static string event170 {
+            get {
+                return ResourceManager.GetString("event170", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to audible alarm ZO is active.
+        /// </summary>
+        internal static string event171 {
+            get {
+                return ResourceManager.GetString("event171", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Train detectors in track 3 are switched on.
         /// </summary>
         internal static string event18 {
             get {
@@ -214,7 +2212,61 @@ namespace SPA5BlackBoxReader {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to train detectors in track 4 are switched on.
+        ///   Looks up a localized string similar to barrier machine YN goes up.
+        /// </summary>
+        internal static string event184 {
+            get {
+                return ResourceManager.GetString("event184", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to barrier machine ZN goes up.
+        /// </summary>
+        internal static string event185 {
+            get {
+                return ResourceManager.GetString("event185", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to barrier machine YO goes up.
+        /// </summary>
+        internal static string event186 {
+            get {
+                return ResourceManager.GetString("event186", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to barrier machine ZO goes up.
+        /// </summary>
+        internal static string event187 {
+            get {
+                return ResourceManager.GetString("event187", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to barrier machine AUX1 goes up.
+        /// </summary>
+        internal static string event188 {
+            get {
+                return ResourceManager.GetString("event188", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to barrier machine AUX2 goes up.
+        /// </summary>
+        internal static string event189 {
+            get {
+                return ResourceManager.GetString("event189", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Train detectors in track 4 are switched on.
         /// </summary>
         internal static string event19 {
             get {
@@ -223,7 +2275,835 @@ namespace SPA5BlackBoxReader {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to general engagement.
+        ///   Looks up a localized string similar to barrier machine YN in upper position.
+        /// </summary>
+        internal static string event192 {
+            get {
+                return ResourceManager.GetString("event192", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to barrier machine ZN in upper position.
+        /// </summary>
+        internal static string event193 {
+            get {
+                return ResourceManager.GetString("event193", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to barrier machine YO in upper position.
+        /// </summary>
+        internal static string event194 {
+            get {
+                return ResourceManager.GetString("event194", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to barrier machine ZO in upper position.
+        /// </summary>
+        internal static string event195 {
+            get {
+                return ResourceManager.GetString("event195", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to barrier machine AUX1 in upper position.
+        /// </summary>
+        internal static string event196 {
+            get {
+                return ResourceManager.GetString("event196", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to barrier machine AUX2 in upper position.
+        /// </summary>
+        internal static string event197 {
+            get {
+                return ResourceManager.GetString("event197", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to barrier machine YN in lower position.
+        /// </summary>
+        internal static string event200 {
+            get {
+                return ResourceManager.GetString("event200", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to barrier machine ZN in lower position.
+        /// </summary>
+        internal static string event201 {
+            get {
+                return ResourceManager.GetString("event201", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to barrier machine YO in lower position.
+        /// </summary>
+        internal static string event202 {
+            get {
+                return ResourceManager.GetString("event202", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to barrier machine ZO in lower position.
+        /// </summary>
+        internal static string event203 {
+            get {
+                return ResourceManager.GetString("event203", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to barrier machine AUX1 in lower position.
+        /// </summary>
+        internal static string event204 {
+            get {
+                return ResourceManager.GetString("event204", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to barrier machine AUX2 in lower position.
+        /// </summary>
+        internal static string event205 {
+            get {
+                return ResourceManager.GetString("event205", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to barrier machine YN goes down.
+        /// </summary>
+        internal static string event208 {
+            get {
+                return ResourceManager.GetString("event208", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to barrier machine ZN goes down.
+        /// </summary>
+        internal static string event209 {
+            get {
+                return ResourceManager.GetString("event209", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to barrier machine YO goes down.
+        /// </summary>
+        internal static string event210 {
+            get {
+                return ResourceManager.GetString("event210", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to barrier machine ZO goes down.
+        /// </summary>
+        internal static string event211 {
+            get {
+                return ResourceManager.GetString("event211", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to barrier machine AUX1 goes down.
+        /// </summary>
+        internal static string event212 {
+            get {
+                return ResourceManager.GetString("event212", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to barrier machine AUX2 goes down.
+        /// </summary>
+        internal static string event213 {
+            get {
+                return ResourceManager.GetString("event213", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to section 1 in track 1 is occupied.
+        /// </summary>
+        internal static string event224 {
+            get {
+                return ResourceManager.GetString("event224", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to section 2 in track 1 is occupied.
+        /// </summary>
+        internal static string event225 {
+            get {
+                return ResourceManager.GetString("event225", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to section 3 in track 1 is occupied.
+        /// </summary>
+        internal static string event226 {
+            get {
+                return ResourceManager.GetString("event226", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to section 1 in track 2 is occupied.
+        /// </summary>
+        internal static string event227 {
+            get {
+                return ResourceManager.GetString("event227", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to section 2 in track 2 is occupied.
+        /// </summary>
+        internal static string event228 {
+            get {
+                return ResourceManager.GetString("event228", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to section 3 in track 2 is occupied.
+        /// </summary>
+        internal static string event229 {
+            get {
+                return ResourceManager.GetString("event229", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to section 1 in track 3 is occupied.
+        /// </summary>
+        internal static string event230 {
+            get {
+                return ResourceManager.GetString("event230", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to section 2 in track 3 is occupied.
+        /// </summary>
+        internal static string event231 {
+            get {
+                return ResourceManager.GetString("event231", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to section 3 in track 3 is occupied.
+        /// </summary>
+        internal static string event232 {
+            get {
+                return ResourceManager.GetString("event232", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to section 1 in track 4 is occupied.
+        /// </summary>
+        internal static string event233 {
+            get {
+                return ResourceManager.GetString("event233", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to section 2 in track 4 is occupied.
+        /// </summary>
+        internal static string event234 {
+            get {
+                return ResourceManager.GetString("event234", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to section 3 in track 4 is occupied.
+        /// </summary>
+        internal static string event235 {
+            get {
+                return ResourceManager.GetString("event235", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to section 1 in track 1 is out of control.
+        /// </summary>
+        internal static string event236 {
+            get {
+                return ResourceManager.GetString("event236", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to section 2 in track 1 is out of control.
+        /// </summary>
+        internal static string event237 {
+            get {
+                return ResourceManager.GetString("event237", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to section 3 in track 1 is out of control.
+        /// </summary>
+        internal static string event238 {
+            get {
+                return ResourceManager.GetString("event238", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to section 1 in track 2 is out of control.
+        /// </summary>
+        internal static string event239 {
+            get {
+                return ResourceManager.GetString("event239", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to section 2 in track 2 is out of control.
+        /// </summary>
+        internal static string event240 {
+            get {
+                return ResourceManager.GetString("event240", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to section 3 in track 2 is out of control.
+        /// </summary>
+        internal static string event241 {
+            get {
+                return ResourceManager.GetString("event241", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to section 1 in track 3 is out of control.
+        /// </summary>
+        internal static string event242 {
+            get {
+                return ResourceManager.GetString("event242", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to section 2 in track 3 is out of control.
+        /// </summary>
+        internal static string event243 {
+            get {
+                return ResourceManager.GetString("event243", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to section 3 in track 3 is out of control.
+        /// </summary>
+        internal static string event244 {
+            get {
+                return ResourceManager.GetString("event244", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to section 1 in track 4 is out of control.
+        /// </summary>
+        internal static string event245 {
+            get {
+                return ResourceManager.GetString("event245", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to section 2 in track 4 is out of control.
+        /// </summary>
+        internal static string event246 {
+            get {
+                return ResourceManager.GetString("event246", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to section 3 in track 4 is out of control.
+        /// </summary>
+        internal static string event247 {
+            get {
+                return ResourceManager.GetString("event247", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to POD is free.
+        /// </summary>
+        internal static string event256 {
+            get {
+                return ResourceManager.GetString("event256", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to POD is active.
+        /// </summary>
+        internal static string event257 {
+            get {
+                return ResourceManager.GetString("event257", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to COD is open.
+        /// </summary>
+        internal static string event258 {
+            get {
+                return ResourceManager.GetString("event258", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to COD low level of channel A is free.
+        /// </summary>
+        internal static string event259 {
+            get {
+                return ResourceManager.GetString("event259", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to COD high level of channel A is free.
+        /// </summary>
+        internal static string event260 {
+            get {
+                return ResourceManager.GetString("event260", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to COD low level of channel B is free.
+        /// </summary>
+        internal static string event261 {
+            get {
+                return ResourceManager.GetString("event261", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to COD high level of channel B is free.
+        /// </summary>
+        internal static string event262 {
+            get {
+                return ResourceManager.GetString("event262", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to COD low level of channel C is free.
+        /// </summary>
+        internal static string event263 {
+            get {
+                return ResourceManager.GetString("event263", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to COD high level of channel C is free.
+        /// </summary>
+        internal static string event264 {
+            get {
+                return ResourceManager.GetString("event264", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to COD low level of channel D is free.
+        /// </summary>
+        internal static string event265 {
+            get {
+                return ResourceManager.GetString("event265", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to COD high level of channel D is free.
+        /// </summary>
+        internal static string event266 {
+            get {
+                return ResourceManager.GetString("event266", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to BOD YN is free.
+        /// </summary>
+        internal static string event267 {
+            get {
+                return ResourceManager.GetString("event267", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to BOD ZN is free.
+        /// </summary>
+        internal static string event268 {
+            get {
+                return ResourceManager.GetString("event268", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to BOD YO is free.
+        /// </summary>
+        internal static string event269 {
+            get {
+                return ResourceManager.GetString("event269", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to BOD ZO is free.
+        /// </summary>
+        internal static string event270 {
+            get {
+                return ResourceManager.GetString("event270", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to XCU switch in NORMAL position.
+        /// </summary>
+        internal static string event272 {
+            get {
+                return ResourceManager.GetString("event272", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to XCU switch in LOCAL CC position.
+        /// </summary>
+        internal static string event273 {
+            get {
+                return ResourceManager.GetString("event273", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to XCU switch in SIGNALS ON position.
+        /// </summary>
+        internal static string event274 {
+            get {
+                return ResourceManager.GetString("event274", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to XCU CROSSING CLEAR buttons are active.
+        /// </summary>
+        internal static string event275 {
+            get {
+                return ResourceManager.GetString("event275", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to XCU door is open.
+        /// </summary>
+        internal static string event276 {
+            get {
+                return ResourceManager.GetString("event276", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to road signals technical reset.
+        /// </summary>
+        internal static string event280 {
+            get {
+                return ResourceManager.GetString("event280", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to POD reset.
+        /// </summary>
+        internal static string event281 {
+            get {
+                return ResourceManager.GetString("event281", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to COD shutter is open.
+        /// </summary>
+        internal static string event282 {
+            get {
+                return ResourceManager.GetString("event282", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to BOD is active.
+        /// </summary>
+        internal static string event283 {
+            get {
+                return ResourceManager.GetString("event283", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ACKNOWLEDGE button.
+        /// </summary>
+        internal static string event284 {
+            get {
+                return ResourceManager.GetString("event284", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to control switch in RAISE position.
+        /// </summary>
+        internal static string event285 {
+            get {
+                return ResourceManager.GetString("event285", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to control switch in AUTO position.
+        /// </summary>
+        internal static string event286 {
+            get {
+                return ResourceManager.GetString("event286", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to control switch in LOWER position.
+        /// </summary>
+        internal static string event287 {
+            get {
+                return ResourceManager.GetString("event287", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to interlocking signal XZGR.
+        /// </summary>
+        internal static string event288 {
+            get {
+                return ResourceManager.GetString("event288", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to interlocking signal (DN)_SPR.
+        /// </summary>
+        internal static string event289 {
+            get {
+                return ResourceManager.GetString("event289", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to interlocking signal (RAISE)_NZPR.
+        /// </summary>
+        internal static string event290 {
+            get {
+                return ResourceManager.GetString("event290", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to interlocking signal ASPR.
+        /// </summary>
+        internal static string event291 {
+            get {
+                return ResourceManager.GetString("event291", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to interlocking signal XNSKPR.
+        /// </summary>
+        internal static string event292 {
+            get {
+                return ResourceManager.GetString("event292", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to interlocking signal (RAISE)_N2PR.
+        /// </summary>
+        internal static string event293 {
+            get {
+                return ResourceManager.GetString("event293", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to interlocking signal (ABS)_LPR is active.
+        /// </summary>
+        internal static string event296 {
+            get {
+                return ResourceManager.GetString("event296", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to interlocking signal (ABS)_LPZR is active.
+        /// </summary>
+        internal static string event297 {
+            get {
+                return ResourceManager.GetString("event297", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to interlocking signal TAR is active.
+        /// </summary>
+        internal static string event298 {
+            get {
+                return ResourceManager.GetString("event298", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to interlocking signal (DN)_S2PR is active.
+        /// </summary>
+        internal static string event299 {
+            get {
+                return ResourceManager.GetString("event299", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to interlocking signal (DN)_S2PZR is active.
+        /// </summary>
+        internal static string event300 {
+            get {
+                return ResourceManager.GetString("event300", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to interlocking signal XZR is active.
+        /// </summary>
+        internal static string event301 {
+            get {
+                return ResourceManager.GetString("event301", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to interlocking signal NL2PR is active.
+        /// </summary>
+        internal static string event302 {
+            get {
+                return ResourceManager.GetString("event302", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to interlocking signal LC_LOCKED is active.
+        /// </summary>
+        internal static string event303 {
+            get {
+                return ResourceManager.GetString("event303", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to interlocking signal TAZPR is active.
+        /// </summary>
+        internal static string event304 {
+            get {
+                return ResourceManager.GetString("event304", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LCU switch in NORMAL position.
+        /// </summary>
+        internal static string event312 {
+            get {
+                return ResourceManager.GetString("event312", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LCU switch in LOCAL position.
+        /// </summary>
+        internal static string event313 {
+            get {
+                return ResourceManager.GetString("event313", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LCU switch in HAND position.
+        /// </summary>
+        internal static string event314 {
+            get {
+                return ResourceManager.GetString("event314", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LCU RAISE button is active.
+        /// </summary>
+        internal static string event315 {
+            get {
+                return ResourceManager.GetString("event315", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LCU LOWER button is active.
+        /// </summary>
+        internal static string event316 {
+            get {
+                return ResourceManager.GetString("event316", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LCU STOP button is active.
+        /// </summary>
+        internal static string event317 {
+            get {
+                return ResourceManager.GetString("event317", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LCU door is open.
+        /// </summary>
+        internal static string event318 {
+            get {
+                return ResourceManager.GetString("event318", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to General engagement.
         /// </summary>
         internal static string event32 {
             get {
@@ -232,7 +3112,7 @@ namespace SPA5BlackBoxReader {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to manual engagement.
+        ///   Looks up a localized string similar to Manual engagement.
         /// </summary>
         internal static string event33 {
             get {
@@ -241,7 +3121,7 @@ namespace SPA5BlackBoxReader {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to control device engagement.
+        ///   Looks up a localized string similar to Control device engagement.
         /// </summary>
         internal static string event34 {
             get {
@@ -250,7 +3130,7 @@ namespace SPA5BlackBoxReader {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to retained engagement.
+        ///   Looks up a localized string similar to Retained engagement.
         /// </summary>
         internal static string event35 {
             get {
@@ -259,7 +3139,52 @@ namespace SPA5BlackBoxReader {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to real time clock updated.
+        ///   Looks up a localized string similar to engagement of train detectors in track 1.
+        /// </summary>
+        internal static string event40 {
+            get {
+                return ResourceManager.GetString("event40", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to engagement of train detectors in track 2.
+        /// </summary>
+        internal static string event41 {
+            get {
+                return ResourceManager.GetString("event41", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to engagement of train detectors in track 3.
+        /// </summary>
+        internal static string event42 {
+            get {
+                return ResourceManager.GetString("event42", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to engagement of train detectors in track 4.
+        /// </summary>
+        internal static string event43 {
+            get {
+                return ResourceManager.GetString("event43", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to command from control device is rejected.
+        /// </summary>
+        internal static string event48 {
+            get {
+                return ResourceManager.GetString("event48", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Real time clock updated.
         /// </summary>
         internal static string event49 {
             get {
@@ -480,6 +3405,33 @@ namespace SPA5BlackBoxReader {
         internal static string labelTime {
             get {
                 return ResourceManager.GetString("labelTime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to START mode.
+        /// </summary>
+        internal static string mode1 {
+            get {
+                return ResourceManager.GetString("mode1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DIAG mode.
+        /// </summary>
+        internal static string mode2 {
+            get {
+                return ResourceManager.GetString("mode2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ACTIVE mode.
+        /// </summary>
+        internal static string mode8 {
+            get {
+                return ResourceManager.GetString("mode8", resourceCulture);
             }
         }
     }

@@ -184,19 +184,19 @@
     <value>Alarmy i zdarzenia</value>
   </data>
   <data name="alert1" xml:space="preserve">
-    <value>rezerwa</value>
+    <value>Rezerwa</value>
   </data>
   <data name="alert2" xml:space="preserve">
-    <value>no battery charging of channel A</value>
+    <value>Brak ładowania akumulatorów w kanale A</value>
   </data>
   <data name="alert3" xml:space="preserve">
-    <value>no battery charging of channel B</value>
+    <value>Brak ładowania akumulatorów w kanale B</value>
   </data>
   <data name="alert4" xml:space="preserve">
-    <value>no battery charging of channel C</value>
+    <value>Brak ładowania akumulatorów w kanale C</value>
   </data>
   <data name="alert5" xml:space="preserve">
-    <value>no battery charging of channel D</value>
+    <value>Brak ładowania akumulatorów w kanale D</value>
   </data>
   <data name="event10" xml:space="preserve">
     <value>System pracuje w trybie automatycznym</value>
@@ -205,19 +205,19 @@
     <value>Ustrka krytyczna systemu</value>
   </data>
   <data name="event12" xml:space="preserve">
-    <value>Minor failure of the system</value>
+    <value>Minor failure of the system/Drugorzędna usterka systemu</value>
   </data>
   <data name="event16" xml:space="preserve">
-    <value>train detectors in track 1 are switched on</value>
+    <value>train detectors in track 1 are switched on/Tor 1 aktywny</value>
   </data>
   <data name="event17" xml:space="preserve">
-    <value>train detectors in track 2 are switched on</value>
+    <value>train detectors in track 2 are switched on/Tor 2 aktywny</value>
   </data>
   <data name="event18" xml:space="preserve">
-    <value>train detectors in track 3 are switched on</value>
+    <value>train detectors in track 3 are switched on/Tor 3 aktywny</value>
   </data>
   <data name="event19" xml:space="preserve">
-    <value>train detectors in track 4 are switched on</value>
+    <value>train detectors in track 4 are switched on/Tor 4 aktywny</value>
   </data>
   <data name="event32" xml:space="preserve">
     <value>general engagement</value>
@@ -232,7 +232,7 @@
     <value>retained engagement</value>
   </data>
   <data name="event49" xml:space="preserve">
-    <value>real time clock updated</value>
+    <value>Aktualizacja czasu</value>
   </data>
   <data name="labelCategory" xml:space="preserve">
     <value>Kategoria</value>
@@ -257,5 +257,989 @@
   </data>
   <data name="labelTime" xml:space="preserve">
     <value>Czas</value>
+  </data>
+  <data name="alert10" xml:space="preserve">
+    <value>Zbyt niskie napięcie akumulatora w kanale A</value>
+  </data>
+  <data name="alert104" xml:space="preserve">
+    <value>earth leakage detection failure of channel A (TH1)</value>
+  </data>
+  <data name="alert105" xml:space="preserve">
+    <value>earth leakage detection failure of channel A (TH2)</value>
+  </data>
+  <data name="alert106" xml:space="preserve">
+    <value>earth leakage detection failure of channel B (TH1)</value>
+  </data>
+  <data name="alert107" xml:space="preserve">
+    <value>earth leakage detection failure of channel B (TH2)</value>
+  </data>
+  <data name="alert108" xml:space="preserve">
+    <value>earth leakage detection failure of channel C (TH1)</value>
+  </data>
+  <data name="alert109" xml:space="preserve">
+    <value>earth leakage detection failure of channel C (TH2)</value>
+  </data>
+  <data name="alert11" xml:space="preserve">
+    <value>Zbyt niskie napięcie akumulatora w kanale B</value>
+  </data>
+  <data name="alert110" xml:space="preserve">
+    <value>earth leakage detection failure of channel D (TH1)</value>
+  </data>
+  <data name="alert111" xml:space="preserve">
+    <value>earth leakage detection failure of channel D (TH2)</value>
+  </data>
+  <data name="alert12" xml:space="preserve">
+    <value>Zbyt niskie napięcie akumulatora w kanale C</value>
+  </data>
+  <data name="alert128" xml:space="preserve">
+    <value>failure of red road signal YN</value>
+  </data>
+  <data name="alert129" xml:space="preserve">
+    <value>failure of red road signal ZN</value>
+  </data>
+  <data name="alert13" xml:space="preserve">
+    <value>Zbyt niskie napięcie akumulatora w kanale D</value>
+  </data>
+  <data name="alert130" xml:space="preserve">
+    <value>failure of red road signal YO</value>
+  </data>
+  <data name="alert131" xml:space="preserve">
+    <value>failure of red road signal ZO</value>
+  </data>
+  <data name="alert132" xml:space="preserve">
+    <value>failure of red road signal YN2</value>
+  </data>
+  <data name="alert133" xml:space="preserve">
+    <value>failure of red road signal ZN2</value>
+  </data>
+  <data name="alert134" xml:space="preserve">
+    <value>failure of red road signal YO2</value>
+  </data>
+  <data name="alert135" xml:space="preserve">
+    <value>failure of red road signal ZO2</value>
+  </data>
+  <data name="alert136" xml:space="preserve">
+    <value>failure of amber road signal YN</value>
+  </data>
+  <data name="alert137" xml:space="preserve">
+    <value>failure of amber road signal ZN</value>
+  </data>
+  <data name="alert138" xml:space="preserve">
+    <value>failure of amber road signal YO</value>
+  </data>
+  <data name="alert139" xml:space="preserve">
+    <value>failure of amber road signal ZO</value>
+  </data>
+  <data name="alert14" xml:space="preserve">
+    <value>Rezerwa</value>
+  </data>
+  <data name="alert140" xml:space="preserve">
+    <value>failure of amber road signal YN2</value>
+  </data>
+  <data name="alert141" xml:space="preserve">
+    <value>failure of amber road signal ZN2</value>
+  </data>
+  <data name="alert142" xml:space="preserve">
+    <value>failure of amber road signal YO2</value>
+  </data>
+  <data name="alert143" xml:space="preserve">
+    <value>failure of amber road signal ZO2</value>
+  </data>
+  <data name="alert144" xml:space="preserve">
+    <value>failure of red man standing signal YN</value>
+  </data>
+  <data name="alert145" xml:space="preserve">
+    <value>failure of red man standing signal ZN</value>
+  </data>
+  <data name="alert146" xml:space="preserve">
+    <value>failure of red man standing signal YO</value>
+  </data>
+  <data name="alert147" xml:space="preserve">
+    <value>failure of red man standing signal ZO</value>
+  </data>
+  <data name="alert148" xml:space="preserve">
+    <value>failure of red man standing signal YN2</value>
+  </data>
+  <data name="alert149" xml:space="preserve">
+    <value>failure of red man standing signal ZN2</value>
+  </data>
+  <data name="alert15" xml:space="preserve">
+    <value>Rezerwa</value>
+  </data>
+  <data name="alert150" xml:space="preserve">
+    <value>failure of red man standing signal YO2</value>
+  </data>
+  <data name="alert151" xml:space="preserve">
+    <value>failure of red man standing signal ZO2</value>
+  </data>
+  <data name="alert152" xml:space="preserve">
+    <value>critical failure of red road signal YN</value>
+  </data>
+  <data name="alert153" xml:space="preserve">
+    <value>critical failure of red road signal ZN</value>
+  </data>
+  <data name="alert154" xml:space="preserve">
+    <value>critical failure of red road signal YO</value>
+  </data>
+  <data name="alert155" xml:space="preserve">
+    <value>critical failure of red road signal ZO</value>
+  </data>
+  <data name="alert156" xml:space="preserve">
+    <value>critical failure of red road signal YN2</value>
+  </data>
+  <data name="alert157" xml:space="preserve">
+    <value>critical failure of red road signal ZN2</value>
+  </data>
+  <data name="alert158" xml:space="preserve">
+    <value>critical failure of red road signal YO2</value>
+  </data>
+  <data name="alert159" xml:space="preserve">
+    <value>critical failure of red road signal ZO2</value>
+  </data>
+  <data name="alert16" xml:space="preserve">
+    <value>Discrepancy of sections state in channels of LX controllers</value>
+  </data>
+  <data name="alert168" xml:space="preserve">
+    <value>failure of audible alarm YN</value>
+  </data>
+  <data name="alert169" xml:space="preserve">
+    <value>failure of audible alarm ZN</value>
+  </data>
+  <data name="alert17" xml:space="preserve">
+    <value>Discrepancy of system work mode in channels of LX controllers</value>
+  </data>
+  <data name="alert170" xml:space="preserve">
+    <value>failure of audible alarm YO</value>
+  </data>
+  <data name="alert171" xml:space="preserve">
+    <value>failure of audible alarm ZO</value>
+  </data>
+  <data name="alert18" xml:space="preserve">
+    <value>Discrepancy of engagement in channels of LX controllers</value>
+  </data>
+  <data name="alert184" xml:space="preserve">
+    <value>barrier machine YN not ready</value>
+  </data>
+  <data name="alert185" xml:space="preserve">
+    <value>barrier machine ZN not ready</value>
+  </data>
+  <data name="alert186" xml:space="preserve">
+    <value>barrier machine YO not ready</value>
+  </data>
+  <data name="alert187" xml:space="preserve">
+    <value>barrier machine ZO not ready</value>
+  </data>
+  <data name="alert188" xml:space="preserve">
+    <value>barrier machine AUX1 not ready</value>
+  </data>
+  <data name="alert189" xml:space="preserve">
+    <value>barrier machine AUX2 not ready</value>
+  </data>
+  <data name="alert19" xml:space="preserve">
+    <value>Failure of concurrent switch-on of train detectors</value>
+  </data>
+  <data name="alert192" xml:space="preserve">
+    <value>broken barrier boom YN</value>
+  </data>
+  <data name="alert193" xml:space="preserve">
+    <value>broken barrier boom ZN</value>
+  </data>
+  <data name="alert194" xml:space="preserve">
+    <value>broken barrier boom YO</value>
+  </data>
+  <data name="alert195" xml:space="preserve">
+    <value>broken barrier boom ZO</value>
+  </data>
+  <data name="alert196" xml:space="preserve">
+    <value>broken barrier boom AUX1</value>
+  </data>
+  <data name="alert197" xml:space="preserve">
+    <value>broken barrier boom AUX2</value>
+  </data>
+  <data name="alert200" xml:space="preserve">
+    <value>failure of barrier machine position YN</value>
+  </data>
+  <data name="alert201" xml:space="preserve">
+    <value>failure of barrier machine position ZN</value>
+  </data>
+  <data name="alert202" xml:space="preserve">
+    <value>failure of barrier machine position YO</value>
+  </data>
+  <data name="alert203" xml:space="preserve">
+    <value>failure of barrier machine position ZO</value>
+  </data>
+  <data name="alert204" xml:space="preserve">
+    <value>failure of barrier machine position AUX1</value>
+  </data>
+  <data name="alert205" xml:space="preserve">
+    <value>failure of barrier machine position AUX2</value>
+  </data>
+  <data name="alert208" xml:space="preserve">
+    <value>overcurrent failure of barrier YN</value>
+  </data>
+  <data name="alert209" xml:space="preserve">
+    <value>overcurrent failure of barrier ZN</value>
+  </data>
+  <data name="alert210" xml:space="preserve">
+    <value>overcurrent failure of barrier YO</value>
+  </data>
+  <data name="alert211" xml:space="preserve">
+    <value>overcurrent failure of barrier ZO</value>
+  </data>
+  <data name="alert212" xml:space="preserve">
+    <value>overcurrent failure of barrier AUX1</value>
+  </data>
+  <data name="alert213" xml:space="preserve">
+    <value>overcurrent failure of barrier AUX2</value>
+  </data>
+  <data name="alert216" xml:space="preserve">
+    <value>current transducer failure of barrier YN</value>
+  </data>
+  <data name="alert217" xml:space="preserve">
+    <value>current transducer failure of barrier ZN</value>
+  </data>
+  <data name="alert218" xml:space="preserve">
+    <value>current transducer failure of barrier YO</value>
+  </data>
+  <data name="alert219" xml:space="preserve">
+    <value>current transducer failure of barrier ZO</value>
+  </data>
+  <data name="alert220" xml:space="preserve">
+    <value>current transducer failure of barrier AUX1</value>
+  </data>
+  <data name="alert221" xml:space="preserve">
+    <value>current transducer failure of barrier AUX2</value>
+  </data>
+  <data name="alert224" xml:space="preserve">
+    <value>communication failure of wheel detector WD1</value>
+  </data>
+  <data name="alert225" xml:space="preserve">
+    <value>communication failure of wheel detector WD2</value>
+  </data>
+  <data name="alert226" xml:space="preserve">
+    <value>communication failure of wheel detector WD3</value>
+  </data>
+  <data name="alert227" xml:space="preserve">
+    <value>communication failure of wheel detector WD4</value>
+  </data>
+  <data name="alert228" xml:space="preserve">
+    <value>communication failure of wheel detector WD5</value>
+  </data>
+  <data name="alert229" xml:space="preserve">
+    <value>communication failure of wheel detector WD6</value>
+  </data>
+  <data name="alert230" xml:space="preserve">
+    <value>communication failure of wheel detector WD7</value>
+  </data>
+  <data name="alert231" xml:space="preserve">
+    <value>communication failure of wheel detector WD8</value>
+  </data>
+  <data name="alert232" xml:space="preserve">
+    <value>communication failure of wheel detector WD9</value>
+  </data>
+  <data name="alert233" xml:space="preserve">
+    <value>communication failure of wheel detector WD10</value>
+  </data>
+  <data name="alert234" xml:space="preserve">
+    <value>communication failure of wheel detector WD11</value>
+  </data>
+  <data name="alert235" xml:space="preserve">
+    <value>communication failure of wheel detector WD12</value>
+  </data>
+  <data name="alert236" xml:space="preserve">
+    <value>communication failure of wheel detector WD13</value>
+  </data>
+  <data name="alert237" xml:space="preserve">
+    <value>communication failure of wheel detector WD14</value>
+  </data>
+  <data name="alert238" xml:space="preserve">
+    <value>communication failure of wheel detector WD15</value>
+  </data>
+  <data name="alert239" xml:space="preserve">
+    <value>communication failure of wheel detector WD16</value>
+  </data>
+  <data name="alert24" xml:space="preserve">
+    <value>Usterka komunikacji z czujnikami koła</value>
+  </data>
+  <data name="alert240" xml:space="preserve">
+    <value>hardware failure of wheel detector WD1</value>
+  </data>
+  <data name="alert241" xml:space="preserve">
+    <value>hardware failure of wheel detector WD2</value>
+  </data>
+  <data name="alert242" xml:space="preserve">
+    <value>hardware failure of wheel detector WD3</value>
+  </data>
+  <data name="alert243" xml:space="preserve">
+    <value>hardware failure of wheel detector WD4</value>
+  </data>
+  <data name="alert244" xml:space="preserve">
+    <value>hardware failure of wheel detector WD5</value>
+  </data>
+  <data name="alert245" xml:space="preserve">
+    <value>hardware failure of wheel detector WD6</value>
+  </data>
+  <data name="alert246" xml:space="preserve">
+    <value>hardware failure of wheel detector WD7</value>
+  </data>
+  <data name="alert247" xml:space="preserve">
+    <value>hardware failure of wheel detector WD8</value>
+  </data>
+  <data name="alert248" xml:space="preserve">
+    <value>hardware failure of wheel detector WD9</value>
+  </data>
+  <data name="alert249" xml:space="preserve">
+    <value>hardware failure of wheel detector WD10</value>
+  </data>
+  <data name="alert25" xml:space="preserve">
+    <value>Usterka czujnika koła</value>
+  </data>
+  <data name="alert250" xml:space="preserve">
+    <value>hardware failure of wheel detector WD11</value>
+  </data>
+  <data name="alert251" xml:space="preserve">
+    <value>hardware failure of wheel detector WD12</value>
+  </data>
+  <data name="alert252" xml:space="preserve">
+    <value>hardware failure of wheel detector WD13</value>
+  </data>
+  <data name="alert253" xml:space="preserve">
+    <value>hardware failure of wheel detector WD14</value>
+  </data>
+  <data name="alert254" xml:space="preserve">
+    <value>hardware failure of wheel detector WD15</value>
+  </data>
+  <data name="alert255" xml:space="preserve">
+    <value>hardware failure of wheel detector WD16</value>
+  </data>
+  <data name="alert256" xml:space="preserve">
+    <value>interlocking failure of signal XZGR</value>
+  </data>
+  <data name="alert257" xml:space="preserve">
+    <value>interlocking failure of signal (DN)_SPR</value>
+  </data>
+  <data name="alert258" xml:space="preserve">
+    <value>interlocking failure of signal (RAISE)_NZPR</value>
+  </data>
+  <data name="alert259" xml:space="preserve">
+    <value>interlocking failure of signal ASPR</value>
+  </data>
+  <data name="alert260" xml:space="preserve">
+    <value>interlocking failure of signal XNSKPR</value>
+  </data>
+  <data name="alert261" xml:space="preserve">
+    <value>interlocking failure of signal (RAISE)_N2PR</value>
+  </data>
+  <data name="alert262" xml:space="preserve">
+    <value>reserved</value>
+  </data>
+  <data name="alert263" xml:space="preserve">
+    <value>reserved</value>
+  </data>
+  <data name="alert264" xml:space="preserve">
+    <value>interlocking failure of signal (ABS)_LPR</value>
+  </data>
+  <data name="alert265" xml:space="preserve">
+    <value>interlocking failure of signal (ABS)_LPZR</value>
+  </data>
+  <data name="alert266" xml:space="preserve">
+    <value>interlocking failure of signal TAR</value>
+  </data>
+  <data name="alert267" xml:space="preserve">
+    <value>interlocking failure of signal (DN)_S2PR</value>
+  </data>
+  <data name="alert268" xml:space="preserve">
+    <value>interlocking failure of signal (DN)_S2PZR</value>
+  </data>
+  <data name="alert269" xml:space="preserve">
+    <value>interlocking failure of signal XZR</value>
+  </data>
+  <data name="alert270" xml:space="preserve">
+    <value>interlocking failure of signal NL2PR</value>
+  </data>
+  <data name="alert271" xml:space="preserve">
+    <value>interlocking failure of signal LC_LOCKED</value>
+  </data>
+  <data name="alert272" xml:space="preserve">
+    <value>LCU failure of signal RAISE</value>
+  </data>
+  <data name="alert273" xml:space="preserve">
+    <value>LCU failure of signal NORMAL</value>
+  </data>
+  <data name="alert274" xml:space="preserve">
+    <value>LCU failure of signal LOWER</value>
+  </data>
+  <data name="alert275" xml:space="preserve">
+    <value>reserved</value>
+  </data>
+  <data name="alert276" xml:space="preserve">
+    <value>LCU failure of signal STOP</value>
+  </data>
+  <data name="alert277" xml:space="preserve">
+    <value>LCU failure of signal HAND</value>
+  </data>
+  <data name="alert278" xml:space="preserve">
+    <value>reserved</value>
+  </data>
+  <data name="alert279" xml:space="preserve">
+    <value>reserved</value>
+  </data>
+  <data name="alert280" xml:space="preserve">
+    <value>XCU failure of signal NORMAL</value>
+  </data>
+  <data name="alert281" xml:space="preserve">
+    <value>reserved</value>
+  </data>
+  <data name="alert282" xml:space="preserve">
+    <value>XCU failure of signal SIGNALS_ON</value>
+  </data>
+  <data name="alert283" xml:space="preserve">
+    <value>XCU failure of signal CROSS_CLEAR</value>
+  </data>
+  <data name="alert284" xml:space="preserve">
+    <value>reserved</value>
+  </data>
+  <data name="alert285" xml:space="preserve">
+    <value>reserved</value>
+  </data>
+  <data name="alert286" xml:space="preserve">
+    <value>OD failure of signal START</value>
+  </data>
+  <data name="alert287" xml:space="preserve">
+    <value>OD failure of signal STOP</value>
+  </data>
+  <data name="alert288" xml:space="preserve">
+    <value>reserved</value>
+  </data>
+  <data name="alert289" xml:space="preserve">
+    <value>POD failure of signal FRE</value>
+  </data>
+  <data name="alert290" xml:space="preserve">
+    <value>POD failure of signal ACT</value>
+  </data>
+  <data name="alert291" xml:space="preserve">
+    <value>POD failure of signal FLT</value>
+  </data>
+  <data name="alert292" xml:space="preserve">
+    <value>POD failure</value>
+  </data>
+  <data name="alert293" xml:space="preserve">
+    <value>COD low level failure of channel A</value>
+  </data>
+  <data name="alert294" xml:space="preserve">
+    <value>COD high level failure of channel A</value>
+  </data>
+  <data name="alert295" xml:space="preserve">
+    <value>COD low level failure of channel B</value>
+  </data>
+  <data name="alert296" xml:space="preserve">
+    <value>COD high level failure of channel B</value>
+  </data>
+  <data name="alert297" xml:space="preserve">
+    <value>COD low level failure of channel C</value>
+  </data>
+  <data name="alert298" xml:space="preserve">
+    <value>COD high level failure of channel C</value>
+  </data>
+  <data name="alert299" xml:space="preserve">
+    <value>COD low level failure of channel D</value>
+  </data>
+  <data name="alert300" xml:space="preserve">
+    <value>COD high level failure of channel D</value>
+  </data>
+  <data name="alert301" xml:space="preserve">
+    <value>BOD12 failure</value>
+  </data>
+  <data name="alert302" xml:space="preserve">
+    <value>BOD34 failure</value>
+  </data>
+  <data name="alert308" xml:space="preserve">
+    <value>interlocking failure of signal TAZPR</value>
+  </data>
+  <data name="alert32" xml:space="preserve">
+    <value>Audible alarms communication failure</value>
+  </data>
+  <data name="alert33" xml:space="preserve">
+    <value>Audible alarms hardware failure</value>
+  </data>
+  <data name="alert48" xml:space="preserve">
+    <value>Red road signals communication failure</value>
+  </data>
+  <data name="alert49" xml:space="preserve">
+    <value>Red road signals hardware failure</value>
+  </data>
+  <data name="alert50" xml:space="preserve">
+    <value>Amber road signals communication failure</value>
+  </data>
+  <data name="alert51" xml:space="preserve">
+    <value>Amber road signals hardware failure</value>
+  </data>
+  <data name="alert52" xml:space="preserve">
+    <value>Red man standing signals communication failure</value>
+  </data>
+  <data name="alert53" xml:space="preserve">
+    <value>Red man standing signals hardware failure</value>
+  </data>
+  <data name="alert56" xml:space="preserve">
+    <value>Failure of barriers direction of movement</value>
+  </data>
+  <data name="alert57" xml:space="preserve">
+    <value>Failure of exit barriers direction of movement</value>
+  </data>
+  <data name="alert6" xml:space="preserve">
+    <value>Otwarta szafa aparatowa</value>
+  </data>
+  <data name="alert63" xml:space="preserve">
+    <value>Failure of Crossing Clear Unit</value>
+  </data>
+  <data name="alert64" xml:space="preserve">
+    <value>Failure of Local Control Unit</value>
+  </data>
+  <data name="alert65" xml:space="preserve">
+    <value>Failure of Signal Box control panel</value>
+  </data>
+  <data name="alert7" xml:space="preserve">
+    <value>Usterka modułu EOD</value>
+  </data>
+  <data name="alert72" xml:space="preserve">
+    <value>Failure of interlocking interface</value>
+  </data>
+  <data name="alert8" xml:space="preserve">
+    <value>Usterka przełącznika trybu pracy</value>
+  </data>
+  <data name="alert80" xml:space="preserve">
+    <value>Failure of occupancy sequence in track 1</value>
+  </data>
+  <data name="alert81" xml:space="preserve">
+    <value>Failure of occupancy sequence in track 2</value>
+  </data>
+  <data name="alert82" xml:space="preserve">
+    <value>Failure of occupancy sequence in track 3</value>
+  </data>
+  <data name="alert83" xml:space="preserve">
+    <value>Failure of occupancy sequence in track 4</value>
+  </data>
+  <data name="alert88" xml:space="preserve">
+    <value>section in track 1 is occupied too long</value>
+  </data>
+  <data name="alert89" xml:space="preserve">
+    <value>section in track 2 is occupied too long</value>
+  </data>
+  <data name="alert9" xml:space="preserve">
+    <value>Zagrożenie pożarem</value>
+  </data>
+  <data name="alert90" xml:space="preserve">
+    <value>section in track 3 is occupied too long</value>
+  </data>
+  <data name="alert91" xml:space="preserve">
+    <value>section in track 4 is occupied too long</value>
+  </data>
+  <data name="alert96" xml:space="preserve">
+    <value>failure of event logger</value>
+  </data>
+  <data name="alert97" xml:space="preserve">
+    <value>failure of event logger backup</value>
+  </data>
+  <data name="event127" xml:space="preserve">
+    <value>red road signal YN is active</value>
+  </data>
+  <data name="event128" xml:space="preserve">
+    <value>red road signal ZN is active</value>
+  </data>
+  <data name="event129" xml:space="preserve">
+    <value>red road signal YO is active</value>
+  </data>
+  <data name="event130" xml:space="preserve">
+    <value>red road signal ZO is active</value>
+  </data>
+  <data name="event131" xml:space="preserve">
+    <value>red road signal YN2 is active</value>
+  </data>
+  <data name="event132" xml:space="preserve">
+    <value>red road signal ZN2 is active</value>
+  </data>
+  <data name="event133" xml:space="preserve">
+    <value>red road signal YO2 is active</value>
+  </data>
+  <data name="event134" xml:space="preserve">
+    <value>red road signal ZO2 is active</value>
+  </data>
+  <data name="event135" xml:space="preserve">
+    <value>amber road signal YN is active</value>
+  </data>
+  <data name="event136" xml:space="preserve">
+    <value>amber road signal ZN is active</value>
+  </data>
+  <data name="event137" xml:space="preserve">
+    <value>amber road signal YO is active</value>
+  </data>
+  <data name="event138" xml:space="preserve">
+    <value>amber road signal ZO is active</value>
+  </data>
+  <data name="event139" xml:space="preserve">
+    <value>amber road signal YN2 is active</value>
+  </data>
+  <data name="event140" xml:space="preserve">
+    <value>amber road signal ZN2 is active</value>
+  </data>
+  <data name="event141" xml:space="preserve">
+    <value>amber road signal YO2 is active</value>
+  </data>
+  <data name="event142" xml:space="preserve">
+    <value>amber road signal ZO2 is active</value>
+  </data>
+  <data name="event143" xml:space="preserve">
+    <value>red man standing signal YN is active</value>
+  </data>
+  <data name="event144" xml:space="preserve">
+    <value>red man standing signal ZN is active</value>
+  </data>
+  <data name="event145" xml:space="preserve">
+    <value>red man standing signal YO is active</value>
+  </data>
+  <data name="event146" xml:space="preserve">
+    <value>red man standing signal ZO is active</value>
+  </data>
+  <data name="event147" xml:space="preserve">
+    <value>red man standing signal YN2 is active</value>
+  </data>
+  <data name="event148" xml:space="preserve">
+    <value>red man standing signal ZN2 is active</value>
+  </data>
+  <data name="event149" xml:space="preserve">
+    <value>red man standing signal YO2 is active</value>
+  </data>
+  <data name="event150" xml:space="preserve">
+    <value>red man standing signal ZO2 is active</value>
+  </data>
+  <data name="event168" xml:space="preserve">
+    <value>audible alarm YN is active</value>
+  </data>
+  <data name="event169" xml:space="preserve">
+    <value>audible alarm ZN is active</value>
+  </data>
+  <data name="event170" xml:space="preserve">
+    <value>audible alarm YO is active</value>
+  </data>
+  <data name="event171" xml:space="preserve">
+    <value>audible alarm ZO is active</value>
+  </data>
+  <data name="event184" xml:space="preserve">
+    <value>barrier machine YN goes up</value>
+  </data>
+  <data name="event185" xml:space="preserve">
+    <value>barrier machine ZN goes up</value>
+  </data>
+  <data name="event186" xml:space="preserve">
+    <value>barrier machine YO goes up</value>
+  </data>
+  <data name="event187" xml:space="preserve">
+    <value>barrier machine ZO goes up</value>
+  </data>
+  <data name="event188" xml:space="preserve">
+    <value>barrier machine AUX1 goes up</value>
+  </data>
+  <data name="event189" xml:space="preserve">
+    <value>barrier machine AUX2 goes up</value>
+  </data>
+  <data name="event192" xml:space="preserve">
+    <value>barrier machine YN in upper position</value>
+  </data>
+  <data name="event193" xml:space="preserve">
+    <value>barrier machine ZN in upper position</value>
+  </data>
+  <data name="event194" xml:space="preserve">
+    <value>barrier machine YO in upper position</value>
+  </data>
+  <data name="event195" xml:space="preserve">
+    <value>barrier machine ZO in upper position</value>
+  </data>
+  <data name="event196" xml:space="preserve">
+    <value>barrier machine AUX1 in upper position</value>
+  </data>
+  <data name="event197" xml:space="preserve">
+    <value>barrier machine AUX2 in upper position</value>
+  </data>
+  <data name="event200" xml:space="preserve">
+    <value>barrier machine YN in lower position</value>
+  </data>
+  <data name="event201" xml:space="preserve">
+    <value>barrier machine ZN in lower position</value>
+  </data>
+  <data name="event202" xml:space="preserve">
+    <value>barrier machine YO in lower position</value>
+  </data>
+  <data name="event203" xml:space="preserve">
+    <value>barrier machine ZO in lower position</value>
+  </data>
+  <data name="event204" xml:space="preserve">
+    <value>barrier machine AUX1 in lower position</value>
+  </data>
+  <data name="event205" xml:space="preserve">
+    <value>barrier machine AUX2 in lower position</value>
+  </data>
+  <data name="event208" xml:space="preserve">
+    <value>barrier machine YN goes down</value>
+  </data>
+  <data name="event209" xml:space="preserve">
+    <value>barrier machine ZN goes down</value>
+  </data>
+  <data name="event210" xml:space="preserve">
+    <value>barrier machine YO goes down</value>
+  </data>
+  <data name="event211" xml:space="preserve">
+    <value>barrier machine ZO goes down</value>
+  </data>
+  <data name="event212" xml:space="preserve">
+    <value>barrier machine AUX1 goes down</value>
+  </data>
+  <data name="event213" xml:space="preserve">
+    <value>barrier machine AUX2 goes down</value>
+  </data>
+  <data name="event224" xml:space="preserve">
+    <value>section 1 in track 1 is occupied</value>
+  </data>
+  <data name="event225" xml:space="preserve">
+    <value>section 2 in track 1 is occupied</value>
+  </data>
+  <data name="event226" xml:space="preserve">
+    <value>section 3 in track 1 is occupied</value>
+  </data>
+  <data name="event227" xml:space="preserve">
+    <value>section 1 in track 2 is occupied</value>
+  </data>
+  <data name="event228" xml:space="preserve">
+    <value>section 2 in track 2 is occupied</value>
+  </data>
+  <data name="event229" xml:space="preserve">
+    <value>section 3 in track 2 is occupied</value>
+  </data>
+  <data name="event230" xml:space="preserve">
+    <value>section 1 in track 3 is occupied</value>
+  </data>
+  <data name="event231" xml:space="preserve">
+    <value>section 2 in track 3 is occupied</value>
+  </data>
+  <data name="event232" xml:space="preserve">
+    <value>section 3 in track 3 is occupied</value>
+  </data>
+  <data name="event233" xml:space="preserve">
+    <value>section 1 in track 4 is occupied</value>
+  </data>
+  <data name="event234" xml:space="preserve">
+    <value>section 2 in track 4 is occupied</value>
+  </data>
+  <data name="event235" xml:space="preserve">
+    <value>section 3 in track 4 is occupied</value>
+  </data>
+  <data name="event236" xml:space="preserve">
+    <value>section 1 in track 1 is out of control</value>
+  </data>
+  <data name="event237" xml:space="preserve">
+    <value>section 2 in track 1 is out of control</value>
+  </data>
+  <data name="event238" xml:space="preserve">
+    <value>section 3 in track 1 is out of control</value>
+  </data>
+  <data name="event239" xml:space="preserve">
+    <value>section 1 in track 2 is out of control</value>
+  </data>
+  <data name="event240" xml:space="preserve">
+    <value>section 2 in track 2 is out of control</value>
+  </data>
+  <data name="event241" xml:space="preserve">
+    <value>section 3 in track 2 is out of control</value>
+  </data>
+  <data name="event242" xml:space="preserve">
+    <value>section 1 in track 3 is out of control</value>
+  </data>
+  <data name="event243" xml:space="preserve">
+    <value>section 2 in track 3 is out of control</value>
+  </data>
+  <data name="event244" xml:space="preserve">
+    <value>section 3 in track 3 is out of control</value>
+  </data>
+  <data name="event245" xml:space="preserve">
+    <value>section 1 in track 4 is out of control</value>
+  </data>
+  <data name="event246" xml:space="preserve">
+    <value>section 2 in track 4 is out of control</value>
+  </data>
+  <data name="event247" xml:space="preserve">
+    <value>section 3 in track 4 is out of control</value>
+  </data>
+  <data name="event256" xml:space="preserve">
+    <value>POD is free</value>
+  </data>
+  <data name="event257" xml:space="preserve">
+    <value>POD is active</value>
+  </data>
+  <data name="event258" xml:space="preserve">
+    <value>COD is open</value>
+  </data>
+  <data name="event259" xml:space="preserve">
+    <value>COD low level of channel A is free</value>
+  </data>
+  <data name="event260" xml:space="preserve">
+    <value>COD high level of channel A is free</value>
+  </data>
+  <data name="event261" xml:space="preserve">
+    <value>COD low level of channel B is free</value>
+  </data>
+  <data name="event262" xml:space="preserve">
+    <value>COD high level of channel B is free</value>
+  </data>
+  <data name="event263" xml:space="preserve">
+    <value>COD low level of channel C is free</value>
+  </data>
+  <data name="event264" xml:space="preserve">
+    <value>COD high level of channel C is free</value>
+  </data>
+  <data name="event265" xml:space="preserve">
+    <value>COD low level of channel D is free</value>
+  </data>
+  <data name="event266" xml:space="preserve">
+    <value>COD high level of channel D is free</value>
+  </data>
+  <data name="event267" xml:space="preserve">
+    <value>BOD YN is free</value>
+  </data>
+  <data name="event268" xml:space="preserve">
+    <value>BOD ZN is free</value>
+  </data>
+  <data name="event269" xml:space="preserve">
+    <value>BOD YO is free</value>
+  </data>
+  <data name="event270" xml:space="preserve">
+    <value>BOD ZO is free</value>
+  </data>
+  <data name="event272" xml:space="preserve">
+    <value>XCU switch in NORMAL position</value>
+  </data>
+  <data name="event273" xml:space="preserve">
+    <value>XCU switch in LOCAL CC position</value>
+  </data>
+  <data name="event274" xml:space="preserve">
+    <value>XCU switch in SIGNALS ON position</value>
+  </data>
+  <data name="event275" xml:space="preserve">
+    <value>XCU CROSSING CLEAR buttons are active</value>
+  </data>
+  <data name="event276" xml:space="preserve">
+    <value>XCU door is open</value>
+  </data>
+  <data name="event280" xml:space="preserve">
+    <value>road signals technical reset</value>
+  </data>
+  <data name="event281" xml:space="preserve">
+    <value>POD reset</value>
+  </data>
+  <data name="event282" xml:space="preserve">
+    <value>COD shutter is open</value>
+  </data>
+  <data name="event283" xml:space="preserve">
+    <value>BOD is active</value>
+  </data>
+  <data name="event284" xml:space="preserve">
+    <value>ACKNOWLEDGE button</value>
+  </data>
+  <data name="event285" xml:space="preserve">
+    <value>control switch in RAISE position</value>
+  </data>
+  <data name="event286" xml:space="preserve">
+    <value>control switch in AUTO position</value>
+  </data>
+  <data name="event287" xml:space="preserve">
+    <value>control switch in LOWER position</value>
+  </data>
+  <data name="event288" xml:space="preserve">
+    <value>interlocking signal XZGR</value>
+  </data>
+  <data name="event289" xml:space="preserve">
+    <value>interlocking signal (DN)_SPR</value>
+  </data>
+  <data name="event290" xml:space="preserve">
+    <value>interlocking signal (RAISE)_NZPR</value>
+  </data>
+  <data name="event291" xml:space="preserve">
+    <value>interlocking signal ASPR</value>
+  </data>
+  <data name="event292" xml:space="preserve">
+    <value>interlocking signal XNSKPR</value>
+  </data>
+  <data name="event293" xml:space="preserve">
+    <value>interlocking signal (RAISE)_N2PR</value>
+  </data>
+  <data name="event296" xml:space="preserve">
+    <value>interlocking signal (ABS)_LPR is active</value>
+  </data>
+  <data name="event297" xml:space="preserve">
+    <value>interlocking signal (ABS)_LPZR is active</value>
+  </data>
+  <data name="event298" xml:space="preserve">
+    <value>interlocking signal TAR is active</value>
+  </data>
+  <data name="event299" xml:space="preserve">
+    <value>interlocking signal (DN)_S2PR is active</value>
+  </data>
+  <data name="event300" xml:space="preserve">
+    <value>interlocking signal (DN)_S2PZR is active</value>
+  </data>
+  <data name="event301" xml:space="preserve">
+    <value>interlocking signal XZR is active</value>
+  </data>
+  <data name="event302" xml:space="preserve">
+    <value>interlocking signal NL2PR is active</value>
+  </data>
+  <data name="event303" xml:space="preserve">
+    <value>interlocking signal LC_LOCKED is active</value>
+  </data>
+  <data name="event304" xml:space="preserve">
+    <value>interlocking signal TAZPR is active</value>
+  </data>
+  <data name="event312" xml:space="preserve">
+    <value>LCU switch in NORMAL position</value>
+  </data>
+  <data name="event313" xml:space="preserve">
+    <value>LCU switch in LOCAL position</value>
+  </data>
+  <data name="event314" xml:space="preserve">
+    <value>LCU switch in HAND position</value>
+  </data>
+  <data name="event315" xml:space="preserve">
+    <value>LCU RAISE button is active</value>
+  </data>
+  <data name="event316" xml:space="preserve">
+    <value>LCU LOWER button is active</value>
+  </data>
+  <data name="event317" xml:space="preserve">
+    <value>LCU STOP button is active</value>
+  </data>
+  <data name="event318" xml:space="preserve">
+    <value>LCU door is open</value>
+  </data>
+  <data name="event40" xml:space="preserve">
+    <value>engagement of train detectors in track 1</value>
+  </data>
+  <data name="event41" xml:space="preserve">
+    <value>engagement of train detectors in track 2</value>
+  </data>
+  <data name="event42" xml:space="preserve">
+    <value>engagement of train detectors in track 3</value>
+  </data>
+  <data name="event43" xml:space="preserve">
+    <value>engagement of train detectors in track 4</value>
+  </data>
+  <data name="event48" xml:space="preserve">
+    <value>command from control device is rejected</value>
+  </data>
+  <data name="mode1" xml:space="preserve">
+    <value>START mode</value>
+  </data>
+  <data name="mode2" xml:space="preserve">
+    <value>DIAG mode</value>
+  </data>
+  <data name="mode8" xml:space="preserve">
+    <value>ACTIVE mode</value>
   </data>
 </root>

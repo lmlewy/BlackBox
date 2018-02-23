@@ -10,11 +10,11 @@ namespace SPA5BlackBoxReader
 {
     class ListOfFrames
     {
-        CultureInfo cultureInfo = null;
 
-        public ListOfFrames(CultureInfo ci)
+
+        public ListOfFrames()
         {
-            cultureInfo = ci;
+            //cultureInfo = ci;
         }
 
 
@@ -55,7 +55,7 @@ namespace SPA5BlackBoxReader
                     {
                         b[j] = binFile[i + 4 + j];
                     }
-                    DataFrame df = new DataFrame(cultureInfo);
+                    DataFrame df = new DataFrame();
                     List<string[]> tempList = df.DecodeDataFrameToList(b);
 
                     foreach (string[] s in tempList)
@@ -94,7 +94,7 @@ namespace SPA5BlackBoxReader
                     {
                         b[j] = binFile[i + 4 + j];
                     }
-                    DataFrame df = new DataFrame(cultureInfo);
+                    DataFrame df = new DataFrame();
                     string[][] table2 = new string[10][];
                     table2 = df.DecodeDataFrameToTable(b);
                     
